@@ -101,6 +101,29 @@ uci add_list dhcp.@dnsmasq[0].server='127.0.0.1#53535'
 uci commit
 service dnsmasq reload
 ````
+
+### Simple Adblock Installation
+Need Internet Connection !!!!!! here is the [source](https://docs.openwrt.melmac.net/simple-adblock/)
+```sh
+opkg update
+cd /tmp/
+opkg download dnsmasq-full
+opkg install ipset
+opkg remove dnsmasq
+opkg install /tmp/dnsmasq-full*
+rm -f /tmp/dnsmasq-full*
+
+#if you need ipv6 support, install these
+opkg update; opkg install ip6tables-mod-nat kmod-ipt-nat6;
+
+#recomended to install these package for speed up adblocking process
+opkg --force-overwrite install gawk grep sed coreutils-sort
+
+#main installation package is this
+opkg install simple-adblock luci-app-simple-adblock
+cd
+```
+
 ### Uninstall Unused Packages
 
 <details><summary>My bloatware lists (click to show)</summary>
