@@ -1,7 +1,12 @@
 ## OpenWrt Raspberry Pi 4 (Model B)
 Index of additional setup for OpenWRT Raspberry Pi 4 (Model B)
+
+About firmware
 - [Source firmware](https://github.com/helmiau/openwrt-rpi4-adds#source-firmware)  |  [Firmware information and features](https://github.com/helmiau/openwrt-rpi4-adds#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-rpi4-adds#firmware-installation)
+
+About Additions
 - [AdGuardHome Installation](https://github.com/helmiau/openwrt-rpi4-adds#adguardhome-installation)
+- [Simple Adblock](https://github.com/helmiau/openwrt-rpi4-adds#simple-adblock-installation)
 - [Debloating/Removing/Uninstalling unused packages](https://github.com/helmiau/openwrt-rpi4-adds#uninstall-unused-packages)
 - [Install Neofetch](https://github.com/helmiau/openwrt-rpi4-adds#install-neofetch)
 - [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-rpi4-adds#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
@@ -114,7 +119,7 @@ opkg install /tmp/dnsmasq-full*
 rm -f /tmp/dnsmasq-full*
 
 #if you need ipv6 support, install these
-opkg update; opkg install ip6tables-mod-nat kmod-ipt-nat6;
+opkg install ip6tables-mod-nat kmod-ipt-nat6
 
 #recomended to install these package for speed up adblocking process
 opkg --force-overwrite install gawk grep sed coreutils-sort
