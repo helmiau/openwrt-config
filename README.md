@@ -1,6 +1,7 @@
 ## OpenWrt Raspberry Pi 4 (Model B)
 Additional setup for OpenWRT Raspberry Pi 4 (Model B)
 
+
 ### Source Firmware
 This firmware is based on snapshot OpenWrt with additional packages from [**Lean packages**](https://github.com/coolsnowwolf/lede) with Chinese as default language. Will be generated automatically every 2:00 AM by github action builds.
 
@@ -196,7 +197,7 @@ Password: libernet
 
 if you get error downloading index.php everytime, then fix with this : (thanks to [vitoharihari](https://github.com/vitoharhari/xderm-mini-gui) for comparison scripts)
 ```sh
-wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/fix-xderm-libernet-gui" -P /root/ && chmod 777 /root/fix-xderm-libernet-gui && bash fix-xderm-libernet-gui
+wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/fix-xderm-libernet-gui" -P /root/ && chmod 777 /root/fix-xderm-libernet-gui && cd /root && bash fix-xderm-libernet-gui
 
 ```
 
