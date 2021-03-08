@@ -1,9 +1,17 @@
 ## OpenWrt Raspberry Pi 4 (Model B)
-Additional setup for OpenWRT Raspberry Pi 4 (Model B)
+Index of additional setup for OpenWRT Raspberry Pi 4 (Model B)
+- [Source firmware](https://github.com/helmiau/openwrt-rpi4-adds#source-firmware)  |  [Firmware information and features](https://github.com/helmiau/openwrt-rpi4-adds#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-rpi4-adds#firmware-installation)
+- [AdGuardHome Installation](https://github.com/helmiau/openwrt-rpi4-adds#adguardhome-installation)
+- [Debloating/Removing/Uninstalling unused packages](https://github.com/helmiau/openwrt-rpi4-adds#uninstall-unused-packages)
+- [Install Neofetch](https://github.com/helmiau/openwrt-rpi4-adds#install-neofetch)
+- [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-rpi4-adds#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
 
 
-### <details><summary>Source Firmware</summary>
-  <p>
+==============================================================================================
+==============================================================================================
+==============================================================================================
+
+### Source Firmware
 This firmware is based on snapshot OpenWrt with additional packages from [**Lean packages**](https://github.com/coolsnowwolf/lede) with Chinese as default language. Will be generated automatically every 2:00 AM by github action builds.
 
 [**Firmware source**](https://github.com/SuLingGG/OpenWrt-Rpi)  |  [**Actions Build**](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi4-lean-openwrt.yml?query=is%3Asuccess)  |  [**Download Latest**](https://openwrt.cc/releases/targets/bcm27xx/bcm2711)
@@ -51,9 +59,6 @@ Note: The advertisement blocking effect at the router level is not good. If you 
 - Support WeChat push (Server sauce), USB print server, KMS server, Wake-on-LAN, Thunderbird, Tianyi Family Cloud/Cloud Disk to speed up.
 - Support SQM Qos, Socat, support udpspeeder and udp2raw acceleration, support SFE acceleration, bridge acceleration, IPV6 acceleration, FULLCONE NAT acceleration, BBR acceleration.
 - Support multi-line multi-dial, load balancing, MWAN3 shunt assistant.
-
-</p>
-</details>
 
 </p>
 </details>
