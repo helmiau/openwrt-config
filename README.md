@@ -183,6 +183,7 @@ luci-app-guest-wifi
 luci-app-v2ray-server 
 luci-app-vsftpd 
 luci-app-adguardhome
+luci-app-ddns
 ```
 
 </p>
@@ -199,14 +200,36 @@ opkg remove --force-removal-of-dependent-packages luci-i18n-*
 #remove luci-app-xxxxx
 opkg remove --force-removal-of-dependent-packages luci-app-jd-dailybonus luci-app-serverchan luci-app-wifischedule luci-app-uugamebooster luci-app-mentohust luci-app-unblockmusic luci-app-familycloud luci-app-frpc luci-app-frps luci-app-baidupcs-web luci-app-filebrowser luci-app-kodexplorer luci-app-ps3netsrv amule luci-app-amule luci-app-syncthing luci-app-nft-qos vsftpd-alt
 opkg remove --force-removal-of-dependent-packages luci-app-nfs luci-app-gowebdav luci-app-minidlna luci-app-mjpg-streamer luci-app-music-remote-center luci-app-syncdial luci-app-flowoffload luci-app-netdata luci-app-smartdns luci-app-accesscontrol luci-app-xlnetacc luci-app-shairplay luci-app-rclone luci-app-socat luci-app-udpxy luci-app-watchcat luci-app-nps
-opkg remove --force-removal-of-dependent-packages luci-app-zerotier luci-app-sqm luci-app-tinyproxy luci-app-haproxy-tcp luci-app-wol luci-app-transmission luci-app-fileassistant luci-app-filetransfer luci-app-ssr-mudb-server luci-app-guest-wifi luci-app-v2ray-server luci-app-vsftpd luci-app-adguardhome
+opkg remove --force-removal-of-dependent-packages luci-app-zerotier luci-app-sqm luci-app-tinyproxy luci-app-haproxy-tcp luci-app-wol luci-app-transmission luci-app-fileassistant luci-app-filetransfer luci-app-ssr-mudb-server luci-app-guest-wifi luci-app-v2ray-server luci-app-vsftpd luci-app-adguardhome luci-app-ddns
 #remove debs and libs
 opkg remove --force-removal-of-dependent-packages wifischedule UnblockNeteaseMusic UnblockNeteaseMusicGo frpc frps baidupcs-web ps3netsrv syncthing nft-qos nfs-kernel-server nfs-kernel-server-utils nfs-utils nfs-utils-libs gowebdav forked-daapd minidlna mjpg-streamer netdata smartdns shairplay shairport-sync-openssl rclone rclone-ng rclone-webui-react socat udpxy watchcat etherwake
-opkg remove --force-removal-of-dependent-packages zerotier sqm-scripts tinyproxy haproxy wol transmission-daemon-openssl transmission-web-control adguardhome
+opkg remove --force-removal-of-dependent-packages zerotier sqm-scripts tinyproxy haproxy wol transmission-daemon-openssl transmission-web-control adguardhome ddns-scripts
 #reboot
 reboot
 
 `````
+<details><summary>Additionals dependencies for myself (click)</summary>
+<p>
+  
+  INTERNET CONNECTION IS NEEDED !!!!!!!
+  
+```sh
+#simple adblock
+opkg --force-overwrite install git gawk grep sed coreutils-sort ip6tables-mod-nat kmod-ipt-nat6 simple-adblock luci-app-simple-adblock https-dns-proxy luci-app-https-dns-proxy
+#libernet
+mkdir -p ~/Downloads && cd ~/Downloads
+git clone git://github.com/lutfailham96/libernet.git
+cd libernet && bash install.sh
+wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/fix-xderm-libernet-gui" -P /root/ && chmod 777 /root/fix-xderm-libernet-gui && cd /root && bash fix-xderm-libernet-gui
+#neofetch
+wget -O /bin/neofetch "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/neopet"
+chmod +x /bin/neofetch
+#speedtest
+wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/speedtest/main/install-speedtest" -P /root/ && chmod 777 /root/install-speedtest && cd /root && bash install-speedtest
+```
+
+</p>
+</details>
 
 ### Install Neofetch
 forked from [**dylanaraps/neofetch**](https://github.com/dylanaraps/neofetch) 
