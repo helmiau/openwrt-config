@@ -179,6 +179,18 @@ wget -O /bin/neofetch "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-ad
 chmod +x /bin/neofetch
 ```
 
+### Install [**Libernet for SSH SSL Tunneling by lutfailham96**](https://github.com/lutfailham96/libernet)
+```sh
+opkg update && opkg install git
+mkdir -p ~/Downloads && cd ~/Downloads
+git clone git://github.com/lutfailham96/libernet.git
+cd libernet && bash install.sh
+```
+if you get error downloading index.php everytime then fix with this
+```sh
+wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/xderm-mini-gui/main/fix-xderm-mini-gui" -P /root/ && chmod 777 /root/fix-xderm-mini-gui && bash fix-xderm-mini-gui
+```
+
 
 
 [**notes**](links)
