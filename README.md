@@ -5,6 +5,7 @@ Index of additional setup for OpenWRT Raspberry Pi 4 (Model B)
 - [Debloating/Removing/Uninstalling unused packages](https://github.com/helmiau/openwrt-rpi4-adds#uninstall-unused-packages)
 - [Install Neofetch](https://github.com/helmiau/openwrt-rpi4-adds#install-neofetch)
 - [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-rpi4-adds#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
+- [Install Speedtest by Ookla](https://github.com/helmiau/openwrt-rpi4-adds#install-speedtest-by-ookla)
 
 ####################################################
 
