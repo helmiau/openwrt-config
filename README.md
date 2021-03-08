@@ -40,6 +40,58 @@ uci commit
 service dnsmasq reload
 ````
 ### Uninstall Unused Packages
+My bloatware lists
+```sh
+All languages
+luci-app-jd-dailybonus
+luci-app-serverchan
+luci-app-wifischedule
+luci-app-uugamebooster
+luci-app-mentohust
+luci-app-unblockmusic
+luci-app-familycloud
+luci-app-frpc
+luci-app-frps
+luci-app-baidupcs-web
+luci-app-filebrowser
+luci-app-kodexplorer 
+luci-app-ps3netsrv 
+luci-app-amule 
+luci-app-syncthing 
+luci-app-nft-qos 
+vsftpd-alt
+luci-app-nfs 
+luci-app-gowebdav 
+luci-app-minidlna 
+luci-app-mjpg-streamer 
+luci-app-music-remote-center 
+luci-app-syncdial 
+luci-app-flowoffload 
+luci-app-netdata 
+luci-app-smartdns 
+luci-app-accesscontrol 
+luci-app-xlnetacc 
+luci-app-shairplay 
+luci-app-rclone 
+luci-app-socat 
+luci-app-udpxy 
+luci-app-watchcat 
+luci-app-nps
+luci-app-zerotier 
+luci-app-sqm 
+luci-app-tinyproxy 
+luci-app-haproxy-tcp 
+luci-app-wol 
+luci-app-transmission 
+luci-app-fileassistant 
+luci-app-filetransfer 
+luci-app-ssr-mudb-server 
+luci-app-guest-wifi 
+luci-app-v2ray-server 
+luci-app-vsftpd 
+luci-app-adguardhome
+```
+online uninstallation
 ```sh
 wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4/main/uninstall-unused-packages.sh" -P /root/ && cd /root && chmod 777 uninstall-unused-packages.sh && bash uninstall-unused-packages.sh
 ```
