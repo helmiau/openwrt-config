@@ -21,7 +21,7 @@ This firmware is based on snapshot OpenWrt with additional packages from [**Lean
 - If you encounter any functional problems before and during the use of the firmware, please refer to the content described in this article first. If you still do not get a satisfactory answer, you can submit Issues in this project or consult through the following methods:
 - Contact information: [QQ group](https://jq.qq.com/?_wv=1027&k=5RkQisS) / [Telegram group](https://t.me/joinchat/Fc-MpxcaH3mEPA4yOMtJPQ) / [Telegram Channel](https://t.me/beautifulapps) (Please read the document carefully before joining the group)
 - (The QQ group is the main contact method, the Telegram group is the alternate contact method, and the Telegram channel will push notifications of firmware and article updates)
-- **If you are a user with rich OpenWrt experience and pursue a streamlined and customized firmware, you can move to mini project of this project: [OpenWrt-Mini](https://github.com/SuLingGG/OpenWrt-Mini) Take a look~**
+- **If you are a user with rich OpenWrt experience and pursue a streamlined and customized firmware, you can take a look to this mini project [OpenWrt-Mini](https://github.com/SuLingGG/OpenWrt-Mini)**
 
 ### AdGuardHome Installation
 Need Internet Connection
