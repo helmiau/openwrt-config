@@ -1,0 +1,68 @@
+#!/bin/bash
+clear
+clear
+echo -e "  ************************************************"
+echo -e "          Download index.php fixer by helmiau "
+echo -e "  ************************************************"
+echo -e " "
+echo -e "Notes : "
+echo -e "- This tool will fix xderm-mini and libernet web ui page"
+echo -e "- If bug fixed words appeared, it's mean bug fixed"
+echo -e "- Device will reboot automatically after fixing"
+sleep 2
+echo -e " "
+echo -e "If bug still appear after reboot, do these :"
+echo -e "- Clear all web history and cache"
+echo -e "- Open incognito tab"
+echo -e "- Use other browser"
+echo -e ""
+echo -e "Waiting process for 3 secs....."
+sleep 3
+echo -e ""
+echo -e ""
+echo -e " Fixing process started !..."
+sleep 2
+echo -e ""
+echo -e " Fixing bug..."
+sleep 2
+echo -e ""
+
+helmiooo=$(cat /etc/config/uhttpd)
+if [[ $helmiooo == *"uhttpd 'mai"* ]]; then
+echo -e "Step 1 done ! Resuming to step 2..."
+sleep 1
+sed -i "/config uhttpd 'main'/a list interpreter '.php=/usr/bin/php-cgi'" /etc/config/uhttpd
+fi
+
+helmiooo=$(cat /etc/config/uhttpd)
+if [[ $helmiooo == *"uhttpd 'mai"* ]]; then
+echo -e "Step 2 done ! Resuming to step 3..."
+sleep 1
+sed -i "/config uhttpd 'main'/a option ubus_prefix '/ubus'" /etc/config/uhttpd
+echo -e "rebooting..."
+sleep 4
+reboot
+rm -rf /root/fix-xderm-mini-gui
+exit
+fi
+
+helmiooo=$(cat /etc/config/uhttpd)
+if [[ $helmiooo == *"uhttpd mai"* ]]; then
+echo -e "Step 3 done ! Resuming to last step..."
+sleep 1
+sed -i "/config uhttpd main/a list interpreter '.php=/usr/bin/php-cgi'" /etc/config/uhttpd
+sleep 1
+fi
+
+helmiooo=$(cat /etc/config/uhttpd)
+if [[ $helmiooo == *"uhttpd mai"* ]]; then
+echo -e "Everything has been done..."
+sleep 1
+sed -i "/config uhttpd main/a option ubus_prefix '/ubus'" /etc/config/uhttpd
+echo -e "rebooting..."
+sleep 4
+reboot
+rm -rf /root/fix-xderm-libernet-gui
+exit
+fi
+
