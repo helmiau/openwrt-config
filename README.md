@@ -78,7 +78,7 @@ Note: The advertisement blocking effect at the router level is not good. If you 
 ### AdGuardHome Installation
 Need Internet Connection
 ```sh
-wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4/main/adguardhome-install.sh" -P /root/ && cd /root && chmod 777 adguardhome-install.sh && bash adguardhome-install.sh
+wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/adguardhome-install.sh" -P /root/ && cd /root && chmod 777 adguardhome-install.sh && bash adguardhome-install.sh
 ```
 else you can do this manually
 ````sh
@@ -154,7 +154,7 @@ luci-app-adguardhome
 
 online uninstallation
 ```sh
-wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4/main/uninstall-unused-packages.sh" -P /root/ && cd /root && chmod 777 uninstall-unused-packages.sh && bash uninstall-unused-packages.sh
+wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/uninstall-unused-packages.sh" -P /root/ && cd /root && chmod 777 uninstall-unused-packages.sh && bash uninstall-unused-packages.sh
 ```
 you can do copy this manually
 `````sh
@@ -171,6 +171,14 @@ opkg remove --force-removal-of-dependent-packages zerotier sqm-scripts tinyproxy
 reboot
 
 `````
+
+### Install Neofetch
+forked from [**dylanaraps/neofetch**](https://github.com/dylanaraps/neofetch) 
+```sh
+wget -O /bin/neofetch "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/neopet"
+chmod +x /bin/neofetch
+```
+
 
 
 [**notes**](links)
