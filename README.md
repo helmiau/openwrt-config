@@ -6,10 +6,7 @@ Index of additional setup for OpenWRT Raspberry Pi 4 (Model B)
 - [Install Neofetch](https://github.com/helmiau/openwrt-rpi4-adds#install-neofetch)
 - [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-rpi4-adds#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
 
-
-==============================================================================================
-==============================================================================================
-==============================================================================================
+####################################################
 
 ### Source Firmware
 This firmware is based on snapshot OpenWrt with additional packages from [**Lean packages**](https://github.com/coolsnowwolf/lede) with Chinese as default language. Will be generated automatically every 2:00 AM by github action builds.
@@ -204,12 +201,17 @@ Username: admin
 Password: libernet
 ```
 
-if you get error downloading index.php everytime, then fix with this : (thanks to [vitoharihari](https://github.com/vitoharhari/xderm-mini-gui) for comparison scripts)
+if you get error downloading index.php everytime, then fix with this : (thanks to [vitoharhari](https://github.com/vitoharhari/xderm-mini-gui) for comparison scripts)
 ```sh
 wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/fix-xderm-libernet-gui" -P /root/ && chmod 777 /root/fix-xderm-libernet-gui && cd /root && bash fix-xderm-libernet-gui
 
 ```
 
+### Install Speedtest by Ookla
+Connection needed ! scripts by [vitoharhari](https://github.com/vitoharhari/speedtest)
+```sh
+wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/speedtest/main/install-speedtest" -P /root/ && chmod 777 /root/install-speedtest && cd /root && bash install-speedtest
 
+```
 
 [**notes**](links)
