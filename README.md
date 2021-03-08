@@ -40,9 +40,11 @@ uci commit
 service dnsmasq reload
 ````
 ### Uninstall Unused Packages
+
 <details><summary>My bloatware lists (click to show)</summary>
 <p>
-```bash
+  
+```sh
 All languages
 luci-app-jd-dailybonus
 luci-app-serverchan
@@ -92,6 +94,7 @@ luci-app-v2ray-server
 luci-app-vsftpd 
 luci-app-adguardhome
 ```
+
 </p>
 </details>
 
