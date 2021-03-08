@@ -7,6 +7,10 @@ This firmware is based on snapshot OpenWrt with additional packages from [**Lean
 [**Firmware source**](https://github.com/SuLingGG/OpenWrt-Rpi)  |  [**Actions Build**](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi4-lean-openwrt.yml?query=is%3Asuccess)  |  [**Download Latest**](https://openwrt.cc/releases/targets/bcm27xx/bcm2711)
 
 ### Firmware Features
+
+<details><summary>Features (click to show)</summary>
+<p>
+
 - This project provides OpenWrt firmware suitable for all Raspberry Pi devices (1~4), NanoPi R2S (Beta), Jingdou Cloud 2.0 and x86 platforms
 - Contains rich OpenWrt original LuCI plug-ins and community LuCI plug-ins
 - Integrate most wired, wireless, 3G/4G network card drivers, no need to install additional
@@ -16,6 +20,10 @@ This firmware is based on snapshot OpenWrt with additional packages from [**Lean
 - Pull the latest OpenWrt source code and community plug-in source code at 2:00 am every day to compile and provide split downloads to ensure that you always get the latest experience
 - Provide packages-server (including WEB server package archive), which can quickly establish LAN software source under Windows
 - For advanced users, provide OpenWrt Image Builder, OpenWrt SDK, OpenWrt Tool Chain, and dl archive files
+
+</p>
+</details>
+
 - If you encounter any functional problems before and during the use of the firmware, please refer to the content described in this article first. If you still do not get a satisfactory answer, you can submit Issues in this project or consult through the following methods:
 - Contact information: [QQ group](https://jq.qq.com/?_wv=1027&k=5RkQisS) / [Telegram group](https://t.me/joinchat/Fc-MpxcaH3mEPA4yOMtJPQ) / [Telegram Channel](https://t.me/beautifulapps) (Please read the document carefully before joining the group)
 - (The QQ group is the main contact method, the Telegram group is the alternate contact method, and the Telegram channel will push notifications of firmware and article updates)
