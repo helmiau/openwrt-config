@@ -2,7 +2,8 @@
 Additional setup for OpenWRT Raspberry Pi 4 (Model B)
 
 
-### Source Firmware
+### <details><summary>Source Firmware</summary>
+  <p>
 This firmware is based on snapshot OpenWrt with additional packages from [**Lean packages**](https://github.com/coolsnowwolf/lede) with Chinese as default language. Will be generated automatically every 2:00 AM by github action builds.
 
 [**Firmware source**](https://github.com/SuLingGG/OpenWrt-Rpi)  |  [**Actions Build**](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi4-lean-openwrt.yml?query=is%3Asuccess)  |  [**Download Latest**](https://openwrt.cc/releases/targets/bcm27xx/bcm2711)
@@ -50,6 +51,9 @@ Note: The advertisement blocking effect at the router level is not good. If you 
 - Support WeChat push (Server sauce), USB print server, KMS server, Wake-on-LAN, Thunderbird, Tianyi Family Cloud/Cloud Disk to speed up.
 - Support SQM Qos, Socat, support udpspeeder and udp2raw acceleration, support SFE acceleration, bridge acceleration, IPV6 acceleration, FULLCONE NAT acceleration, BBR acceleration.
 - Support multi-line multi-dial, load balancing, MWAN3 shunt assistant.
+
+</p>
+</details>
 
 </p>
 </details>
