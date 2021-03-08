@@ -41,7 +41,7 @@ service dnsmasq reload
 ````
 ### Uninstall Unused Packages
 My bloatware lists
-```sh
+`
 All languages
 luci-app-jd-dailybonus
 luci-app-serverchan
@@ -90,7 +90,7 @@ luci-app-guest-wifi
 luci-app-v2ray-server 
 luci-app-vsftpd 
 luci-app-adguardhome
-```
+`
 online uninstallation
 ```sh
 wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4/main/uninstall-unused-packages.sh" -P /root/ && cd /root && chmod 777 uninstall-unused-packages.sh && bash uninstall-unused-packages.sh
