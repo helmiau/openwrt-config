@@ -4,9 +4,7 @@ Additional setup for OpenWRT Raspberry Pi 4 (Model B)
 ### Source Firmware
 This firmware is based on snapshot OpenWrt with additional packages from [**Lean packages**](https://github.com/coolsnowwolf/lede)
 
-[**Firmware source**](https://github.com/SuLingGG/OpenWrt-Rpi)  |  [**Actions Build**](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi4-lean-openwrt.yml)  |  [**Download Latest**](https://openwrt.cc/releases/targets/bcm27xx/bcm2711)
-
-[Lean OpenWRT for Raspberry Pi 4](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi4-lean-openwrt.yml?query=is%3Asuccess) | [Official Modded OpenWrt by SuLingGG](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi4-offical-openwrt.yml?query=is%3Asuccess)
+[**Firmware source**](https://github.com/SuLingGG/OpenWrt-Rpi)  |  [**Actions Build**](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi4-lean-openwrt.yml?query=is%3Asuccess)  |  [**Download Latest**](https://openwrt.cc/releases/targets/bcm27xx/bcm2711)
 
 ### Firmware Features
 - This project provides OpenWrt firmware suitable for all Raspberry Pi devices (1~4), NanoPi R2S (Beta), Jingdou Cloud 2.0 and x86 platforms
