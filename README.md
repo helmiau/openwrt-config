@@ -97,7 +97,8 @@ else you can do this manually
 ````sh
 mkdir /etc/AdGuardHome
 cd /etc/AdGuardHome/
-wget https://github.com/AdguardTeam/AdGuardHome/releases/download/${latest_ver}/AdGuardHome_linux_${Arch}.tar.gz -O AdGuardHome-bin.tar.gz
+wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm.tar.gz -O AdGuardHome-bin.tar.gz
+#wget https://github.com/AdguardTeam/AdGuardHome/releases/download/${latest_ver}/AdGuardHome_linux_${Arch}.tar.gz -O AdGuardHome-bin.tar.gz
 tar -xzvf AdGuardHome-bin.tar.gz
 cd AdGuardHome/
 ./AdGuardHome -s install
