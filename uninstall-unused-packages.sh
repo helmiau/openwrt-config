@@ -1,11 +1,94 @@
+#!/bin/sh
 #remove languages
 opkg remove --force-removal-of-dependent-packages luci-i18n-*
 #remove luci-app-xxxxx
-opkg remove --force-removal-of-dependent-packages luci-app-jd-dailybonus luci-app-serverchan luci-app-wifischedule luci-app-uugamebooster luci-app-mentohust luci-app-unblockmusic luci-app-familycloud luci-app-frpc luci-app-frps luci-app-baidupcs-web luci-app-filebrowser luci-app-kodexplorer luci-app-ps3netsrv amule luci-app-amule luci-app-syncthing luci-app-nft-qos vsftpd-alt
-opkg remove --force-removal-of-dependent-packages luci-app-nfs luci-app-gowebdav luci-app-minidlna luci-app-mjpg-streamer luci-app-music-remote-center luci-app-syncdial luci-app-flowoffload luci-app-netdata luci-app-smartdns luci-app-accesscontrol luci-app-xlnetacc luci-app-shairplay luci-app-rclone luci-app-socat luci-app-udpxy luci-app-watchcat luci-app-nps
-opkg remove --force-removal-of-dependent-packages luci-app-zerotier luci-app-sqm luci-app-tinyproxy luci-app-haproxy-tcp luci-app-wol luci-app-transmission luci-app-fileassistant luci-app-filetransfer luci-app-ssr-mudb-server luci-app-guest-wifi luci-app-v2ray-server luci-app-vsftpd luci-app-adguardhome
+opkg remove --force-removal-of-dependent-packages luci-app-jd-dailybonus
+opkg remove --force-removal-of-dependent-packages luci-app-serverchan
+opkg remove --force-removal-of-dependent-packages luci-app-wifischedule
+opkg remove --force-removal-of-dependent-packages luci-app-uugamebooster
+opkg remove --force-removal-of-dependent-packages luci-app-mentohust
+opkg remove --force-removal-of-dependent-packages luci-app-unblockmusic
+opkg remove --force-removal-of-dependent-packages luci-app-familycloud
+opkg remove --force-removal-of-dependent-packages luci-app-frpc
+opkg remove --force-removal-of-dependent-packages luci-app-frps
+opkg remove --force-removal-of-dependent-packages luci-app-baidupcs-web
+opkg remove --force-removal-of-dependent-packages luci-app-filebrowser
+opkg remove --force-removal-of-dependent-packages luci-app-kodexplorer
+opkg remove --force-removal-of-dependent-packages luci-app-ps3netsrv
+opkg remove --force-removal-of-dependent-packages luci-app-amule
+opkg remove --force-removal-of-dependent-packages luci-app-syncthing
+opkg remove --force-removal-of-dependent-packages luci-app-nft-qos
+opkg remove --force-removal-of-dependent-packages vsftpd-alt
+opkg remove --force-removal-of-dependent-packages luci-app-nfs
+opkg remove --force-removal-of-dependent-packages luci-app-gowebdav
+opkg remove --force-removal-of-dependent-packages luci-app-minidlna
+opkg remove --force-removal-of-dependent-packages luci-app-mjpg-streamer
+opkg remove --force-removal-of-dependent-packages luci-app-music-remote-center
+opkg remove --force-removal-of-dependent-packages luci-app-syncdial
+opkg remove --force-removal-of-dependent-packages luci-app-flowoffload
+opkg remove --force-removal-of-dependent-packages luci-app-netdata
+opkg remove --force-removal-of-dependent-packages luci-app-smartdns
+opkg remove --force-removal-of-dependent-packages luci-app-accesscontrol
+opkg remove --force-removal-of-dependent-packages luci-app-xlnetacc
+opkg remove --force-removal-of-dependent-packages luci-app-shairplay
+opkg remove --force-removal-of-dependent-packages luci-app-rclone
+opkg remove --force-removal-of-dependent-packages luci-app-socat
+opkg remove --force-removal-of-dependent-packages luci-app-udpxy
+opkg remove --force-removal-of-dependent-packages luci-app-watchcat
+opkg remove --force-removal-of-dependent-packages luci-app-nps
+opkg remove --force-removal-of-dependent-packages luci-app-zerotier
+opkg remove --force-removal-of-dependent-packages luci-app-sqm
+opkg remove --force-removal-of-dependent-packages luci-app-tinyproxy
+opkg remove --force-removal-of-dependent-packages luci-app-haproxy-tcp
+opkg remove --force-removal-of-dependent-packages luci-app-wol
+opkg remove --force-removal-of-dependent-packages luci-app-transmission
+opkg remove --force-removal-of-dependent-packages luci-app-fileassistant
+opkg remove --force-removal-of-dependent-packages luci-app-filetransfer
+opkg remove --force-removal-of-dependent-packages luci-app-ssr-mudb-server
+opkg remove --force-removal-of-dependent-packages luci-app-guest-wifi
+opkg remove --force-removal-of-dependent-packages luci-app-v2ray-server
+opkg remove --force-removal-of-dependent-packages luci-app-vsftpd
+opkg remove --force-removal-of-dependent-packages luci-app-ddns
+opkg remove --force-removal-of-dependent-packages luci-app-mwan3helper
+opkg remove --force-removal-of-dependent-packages luci-app-adguardhome 
 #remove debs and libs
-opkg remove --force-removal-of-dependent-packages wifischedule UnblockNeteaseMusic UnblockNeteaseMusicGo frpc frps baidupcs-web ps3netsrv syncthing nft-qos nfs-kernel-server nfs-kernel-server-utils nfs-utils nfs-utils-libs gowebdav forked-daapd minidlna mjpg-streamer netdata smartdns shairplay shairport-sync-openssl rclone rclone-ng rclone-webui-react socat udpxy watchcat etherwake
-opkg remove --force-removal-of-dependent-packages zerotier sqm-scripts tinyproxy haproxy wol transmission-daemon-openssl transmission-web-control adguardhome
+opkg remove --force-removal-of-dependent-packages amule
+opkg remove --force-removal-of-dependent-packages wifischedule
+opkg remove --force-removal-of-dependent-packages UnblockNeteaseMusic
+opkg remove --force-removal-of-dependent-packages UnblockNeteaseMusicGo
+opkg remove --force-removal-of-dependent-packages frpc
+opkg remove --force-removal-of-dependent-packages frps
+opkg remove --force-removal-of-dependent-packages baidupcs-web
+opkg remove --force-removal-of-dependent-packages ps3netsrv
+opkg remove --force-removal-of-dependent-packages syncthing
+opkg remove --force-removal-of-dependent-packages nft-qos
+opkg remove --force-removal-of-dependent-packages nfs-kernel-server
+opkg remove --force-removal-of-dependent-packages nfs-kernel-server-utils
+opkg remove --force-removal-of-dependent-packages nfs-utils
+opkg remove --force-removal-of-dependent-packages nfs-utils-libs
+opkg remove --force-removal-of-dependent-packages gowebdav
+opkg remove --force-removal-of-dependent-packages forked-daapd
+opkg remove --force-removal-of-dependent-packages minidlna
+opkg remove --force-removal-of-dependent-packages mjpg-streamer
+opkg remove --force-removal-of-dependent-packages netdata
+opkg remove --force-removal-of-dependent-packages smartdns
+opkg remove --force-removal-of-dependent-packages shairplay
+opkg remove --force-removal-of-dependent-packages shairport-sync-openssl
+opkg remove --force-removal-of-dependent-packages rclone
+opkg remove --force-removal-of-dependent-packages rclone-ng
+opkg remove --force-removal-of-dependent-packages rclone-webui-react
+opkg remove --force-removal-of-dependent-packages socat
+opkg remove --force-removal-of-dependent-packages udpxy
+opkg remove --force-removal-of-dependent-packages watchcat
+opkg remove --force-removal-of-dependent-packages etherwake
+opkg remove --force-removal-of-dependent-packages zerotier
+opkg remove --force-removal-of-dependent-packages sqm-scripts
+opkg remove --force-removal-of-dependent-packages tinyproxy
+opkg remove --force-removal-of-dependent-packages haproxy
+opkg remove --force-removal-of-dependent-packages wol
+opkg remove --force-removal-of-dependent-packages transmission-daemon-openssl
+opkg remove --force-removal-of-dependent-packages transmission-web-control
+opkg remove --force-removal-of-dependent-packages ddns-*
+opkg remove --force-removal-of-dependent-packages adguardhome
 #reboot
 reboot
