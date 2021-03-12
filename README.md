@@ -126,7 +126,10 @@ opkg install ip6tables-mod-nat kmod-ipt-nat6
 opkg --force-overwrite install gawk grep sed coreutils-sort
 
 #main installation package is this
-opkg install simple-adblock luci-app-simple-adblock
+opkg install simple-adblock
+opkg install luci-app-simple-adblock
+opkg install https-dns-proxy
+opkg install luci-app-https-dns-proxy
 cd
 ```
 
