@@ -11,6 +11,8 @@ About Additions
 - [Install Neofetch](https://github.com/helmiau/openwrt-rpi4-adds#install-neofetch)
 - [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-rpi4-adds#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
 - [Install Speedtest by Ookla](https://github.com/helmiau/openwrt-rpi4-adds#install-speedtest-by-ookla)
+- [Setting up load balance for vpn injection](https://github.com/helmiau/openwrt-rpi4-adds/blob/main/loadbalance-setting.md#setting-up-load-balance-with-mwan3-for-all-devices)
+
 
 ####################################################
 
