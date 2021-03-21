@@ -138,8 +138,12 @@ Inter-Zone Forwarding
 
 ##### Note : this load balance settings is created for vpn injection, even no internet, this setting will recognize modem as online device
 
-- Click ```Save & Apply```
+- Edit ```etc/config/mwan3``` file using WinSCP or Terminal or Putty
+- Find created Network Interface name before, i use ```ueth1``` for an example
+- Edit config like this (copy and paste it! if it's differents, you can compare these scripts to your config
 ```sh
+.........
+
 config interface 'ueth1'
 	option enabled '1'
 	option initial_state 'online'
@@ -157,4 +161,8 @@ config interface 'ueth1'
 	option up '5'
 	option count '4'
 	option size '24'
+	
+...........
 ```
+- Then copy and paste ```config interface 'interface_name'``` until end of line of scripts above
+- Then edit it to other interface name
