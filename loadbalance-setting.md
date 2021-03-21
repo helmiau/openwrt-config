@@ -85,12 +85,40 @@ Inter-Zone Forwarding
 #### 3. Setting up loadbalance / mwan3
 - Open your LuCi IP Address -> Network -> Load Balancing
 - Open Interface tab -> Delete all interface
+
+![firefox_GxKWIifcax](https://user-images.githubusercontent.com/20932301/111910616-b320db80-8a94-11eb-952c-cb86ea7a33c2.png)
+
 - Create new Interface with ```Interface name inside Network -> Interface``` and create new one according your Interface name then click ```Add`` button
+
+![firefox_VzkD9xY9oF](https://user-images.githubusercontent.com/20932301/111910693-02ffa280-8a95-11eb-989b-b52a4df08cef.png)
+
+![image](https://user-images.githubusercontent.com/20932301/111910717-1a3e9000-8a95-11eb-80f0-649fb9caed6c.png)
+
+- Scroll down and click ```Save & Apply```
+
+![firefox_f84tTmbT6a](https://user-images.githubusercontent.com/20932301/111910767-4ce88880-8a95-11eb-8952-cbbe05ce7756.png)
+
 - Open Member tab -> Delete all member
+
+![firefox_AlSfIVZjMx](https://user-images.githubusercontent.com/20932301/111910805-76091900-8a95-11eb-9742-edf0a0c55a35.png)
+
 - Create new Member and set Interface to Interface name above and create new one according your Interface name with metric 1 and weight 1
+
+![firefox_qSFR797GCx](https://user-images.githubusercontent.com/20932301/111910856-9df87c80-8a95-11eb-9455-1ad706ffffc7.png)
+
+![firefox_yTkoajEC0Q](https://user-images.githubusercontent.com/20932301/111910860-a2249a00-8a95-11eb-8ed2-753031aedd10.png)
+
+![firefox_PMr8Lkiugr](https://user-images.githubusercontent.com/20932301/111910874-b8325a80-8a95-11eb-9117-9c2c4fa48452.png)
+
+- Click ```Save & Apply```
 - Open Policies tab -> Delete all, except BALANCED
+
+![image](https://user-images.githubusercontent.com/20932301/111910913-db5d0a00-8a95-11eb-8f45-cd79f7fb67ec.png)
+
 - Edit ```Balanced``` and set ```Member used``` to Member name above
-![image](https://user-images.githubusercontent.com/20932301/111909663-c7fb7000-8a90-11eb-9c1c-ca7b94b96070.png)
+
+![image](https://user-images.githubusercontent.com/20932301/111910929-f0d23400-8a95-11eb-9eef-57ff71b4efd5.png)
+
 
 - Open Rules tab -> Delete all, except DEFAULT_RULE
 
