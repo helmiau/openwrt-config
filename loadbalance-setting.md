@@ -35,6 +35,7 @@ Zone (this is firewall name)
 - Masquerading		-> Checked
 - MSS clamping		-> Checked
 - Covered networks 	-> interface name
+
 Inter-Zone Forwarding
 - Allow forward from source zones 	-> lan
 ```
@@ -47,7 +48,7 @@ Note : Repeat step 2 for every first new ethernet device connected and openwrt c
 - Open Policies tab -> Delete all, except BALANCED
 - Open Rules tab -> Delete all, except DEFAULT_RULE
 
-note : this load balance settings is created for vpn injection, even no internet, this setting will recognize it as online device
+Note : this load balance settings is created for vpn injection, even no internet, this setting will recognize modem as online device
 ```sh
 config interface 'ueth1'
 	option enabled '1'
