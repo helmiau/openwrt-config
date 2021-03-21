@@ -14,11 +14,12 @@ opkg update; opkg install mwan3 luci-app-mwan3
 - Create new interface by
 ```sh
 - Add new interface
+![image](https://user-images.githubusercontent.com/20932301/111909707-f0836a00-8a90-11eb-869a-c6d4eb37c84f.png)
 - Write interface name
 - Protocol interface -> DHCP Client
 - Cover the following interface -> ethX (X is number, according your plugged in modems)
 ```
-![image](https://user-images.githubusercontent.com/20932301/111909707-f0836a00-8a90-11eb-869a-c6d4eb37c84f.png)
+
 
 - After creating new interface -> back to Network -> Interface
 ```sh
