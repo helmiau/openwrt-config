@@ -117,12 +117,28 @@ Inter-Zone Forwarding
 
 - Edit ```Balanced``` and set ```Member used``` to Member name above
 
-![image](https://user-images.githubusercontent.com/20932301/111910929-f0d23400-8a95-11eb-9eef-57ff71b4efd5.png)
+![firefox_E8pWSnXAen](https://user-images.githubusercontent.com/20932301/111911004-47d80900-8a96-11eb-95bb-b13ee5e7d04c.png)
 
+![firefox_qSn9AxASh9](https://user-images.githubusercontent.com/20932301/111911022-4c9cbd00-8a96-11eb-9c74-9c20605dec77.png)
 
-- Open Rules tab -> Delete all, except DEFAULT_RULE
+- Click ```Save & Apply```
+- Open Rules tab -> Delete all, except ```DEFAULT_RULE```
 
-Note : this load balance settings is created for vpn injection, even no internet, this setting will recognize modem as online device
+![image](https://user-images.githubusercontent.com/20932301/111911037-5a524280-8a96-11eb-93ac-d345d37c20c4.png)
+
+- Edit ```DEFAULT_RULE```
+
+![image](https://user-images.githubusercontent.com/20932301/111911074-88378700-8a96-11eb-8e0a-5bfb591bda1f.png)
+
+![image](https://user-images.githubusercontent.com/20932301/111911084-938ab280-8a96-11eb-8602-8cd4417283fb.png)
+
+![image](https://user-images.githubusercontent.com/20932301/111911090-98e7fd00-8a96-11eb-93c4-8b3f48fdbab6.png)
+
+- Click ```Save & Apply```
+
+##### Note : this load balance settings is created for vpn injection, even no internet, this setting will recognize modem as online device
+
+- Click ```Save & Apply```
 ```sh
 config interface 'ueth1'
 	option enabled '1'
