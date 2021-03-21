@@ -25,24 +25,29 @@ opkg update; opkg install mwan3 luci-app-mwan3
 - goto "unspecified -or- create:"
 - Write new firewall name for selected interface
 ```
-- After creating new interface -> back to Network -> Interface
+- Open your LuCi IP Address -> Network -> Firewall
+- Find new firewall you create before, then edit it
 ```sh
-- Edit your written interface name
-- Open Firewall Settings tab
-- Create / Assign firewall-zone
-- goto "unspecified -or- create:"
-- Write new firewall name for selected interface
+Zone (this is firewall name)
+- Input 		-> Reject
+- Output 		-> Accept
+- Forward 		-> Reject
+- Masquerading		-> Checked
+- MSS clamping		-> Checked
+- Covered networks 	-> interface name
+Inter-Zone Forwarding
+- Allow forward from source zones 	-> lan
 ```
 Note : Repeat step 2 for every first new ethernet device connected and openwrt can't recognize it in Interface
 
+3. Setting up loadbalance / mwan3
 - Open your LuCi IP Address -> Network -> Load Balancing
 - Open Interface tab -> Delete all interface
 - Open Member tab -> Delete all member
 - Open Policies tab -> Delete all, except BALANCED
 - Open Rules tab -> Delete all, except DEFAULT_RULE
-- 
 
-this load balance settings is created for vpn injection, even no internet inside modem, this setting will recognize it as online device
+note : this load balance settings is created for vpn injection, even no internet, this setting will recognize it as online device
 ```sh
 config interface 'ueth1'
 	option enabled '1'
