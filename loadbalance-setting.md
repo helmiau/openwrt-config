@@ -2,10 +2,11 @@
 ## Setting up Load Balance with mwan3 (for all devices)
 !!!if you don't understand English, use translate.google.com to translate it into Indonesian!!!
 
-1. Install Load Balance package first if you don't have it
+1. Install Load Balance package first if you don't have it (use terminal)
 ```sh
 opkg update; opkg install mwan3 luci-app-mwan3
 ```
+
 
 2. Interface creation & setting up firewall
 - Plug in your modems
@@ -17,6 +18,8 @@ opkg update; opkg install mwan3 luci-app-mwan3
 - Protocol interface -> DHCP Client
 - Cover the following interface -> ethX (X is number, according your plugged in modems)
 ```
+![image](https://user-images.githubusercontent.com/20932301/111909707-f0836a00-8a90-11eb-869a-c6d4eb37c84f.png)
+
 - After creating new interface -> back to Network -> Interface
 ```sh
 - Edit your written interface name
@@ -25,6 +28,8 @@ opkg update; opkg install mwan3 luci-app-mwan3
 - goto "unspecified -or- create:"
 - Write new firewall name for selected interface
 ```
+![image](https://user-images.githubusercontent.com/20932301/111909798-3f310400-8a91-11eb-8ed4-c53115d064a6.png)
+
 - Open your LuCi IP Address -> Network -> Firewall
 - Find new firewall you create before, then edit it
 ```sh
@@ -41,11 +46,17 @@ Inter-Zone Forwarding
 ```
 Note : Repeat step 2 for every first new ethernet device connected and openwrt can't recognize it in Interface
 
+
 3. Setting up loadbalance / mwan3
 - Open your LuCi IP Address -> Network -> Load Balancing
 - Open Interface tab -> Delete all interface
+- Create new Interface with ```Interface name inside Network -> Interface``` and create new one according your Interface name then click ```Add`` button
 - Open Member tab -> Delete all member
+- Create new Member and set Interface to Interface name above and create new one according your Interface name with metric 1 and weight 1
 - Open Policies tab -> Delete all, except BALANCED
+- Edit ```Balanced``` and set ```Member used``` to Member name above
+![image](https://user-images.githubusercontent.com/20932301/111909663-c7fb7000-8a90-11eb-9c1c-ca7b94b96070.png)
+
 - Open Rules tab -> Delete all, except DEFAULT_RULE
 
 Note : this load balance settings is created for vpn injection, even no internet, this setting will recognize modem as online device
