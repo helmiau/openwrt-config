@@ -1,6 +1,6 @@
 #!/bin/sh
 #remove languages
-opkg remove --force-removal-of-dependent-packages luci-i18n-*
+opkg remove luci-i18n-*
 #remove luci-app-xxxxx
 opkg remove --force-removal-of-dependent-packages luci-app-jd-dailybonus
 opkg remove --force-removal-of-dependent-packages luci-app-serverchan
@@ -50,7 +50,11 @@ opkg remove --force-removal-of-dependent-packages luci-app-v2ray-server
 opkg remove --force-removal-of-dependent-packages luci-app-vsftpd
 opkg remove --force-removal-of-dependent-packages luci-app-ddns
 opkg remove --force-removal-of-dependent-packages luci-app-mwan3helper
-opkg remove --force-removal-of-dependent-packages luci-app-adguardhome 
+opkg remove --force-removal-of-dependent-packages luci-app-adguardhome
+opkg remove --force-removal-of-dependent-packages luci-app-webadmin
+opkg remove --force-removal-of-dependent-packages luci-app-upnp
+opkg remove --force-removal-of-dependent-packages luci-app-n2n_v2
+opkg remove --force-removal-of-dependent-packages luci-udptools
 #remove debs and libs
 opkg remove --force-removal-of-dependent-packages amule
 opkg remove --force-removal-of-dependent-packages wifischedule
@@ -90,5 +94,7 @@ opkg remove --force-removal-of-dependent-packages transmission-daemon-openssl
 opkg remove --force-removal-of-dependent-packages transmission-web-control
 opkg remove --force-removal-of-dependent-packages ddns-*
 opkg remove --force-removal-of-dependent-packages adguardhome
-#reboot
+opkg remove --force-removal-of-dependent-packages miniupnpd
+opkg remove --force-removal-of-dependent-packages n2n-edge
+opkg remove --force-removal-of-dependent-packages n2n-supernode
 reboot
