@@ -91,6 +91,7 @@ Note: The advertisement blocking effect at the router level is not good. If you 
 </details>
 
 ### AdGuardHome Installation
+for all devices
 Need Internet Connection
 ```sh
 wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/adguardhome-install.sh" -P /root/ && cd /root && chmod 777 adguardhome-install.sh && bash adguardhome-install.sh
@@ -111,6 +112,7 @@ service dnsmasq reload
 ````
 
 ### Simple Adblock Installation
+for all devices
 Need Internet Connection !!!!!! here is the [source](https://docs.openwrt.melmac.net/simple-adblock/)
 ```sh
 opkg update
@@ -136,7 +138,7 @@ cd
 ```
 
 ### Uninstall Unused Packages
-
+for [**this firmware**](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi4-lean-openwrt.yml?query=is%3Asuccess)
 <details><summary>My bloatware lists (click to show)</summary>
 <p>
   
@@ -330,6 +332,7 @@ opkg --force-overwrite install git gawk grep sed coreutils-sort ip6tables-mod-na
 </details>
 
 ### Install Neofetch
+for all devices
 forked from [**dylanaraps/neofetch**](https://github.com/dylanaraps/neofetch) 
 ```sh
 wget -O /bin/neofetch "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/neopet"
@@ -337,11 +340,10 @@ chmod +x /bin/neofetch
 ```
 
 ### Install [**Libernet for SSH SSL Tunneling by lutfailham96**](https://github.com/lutfailham96/libernet)
+for all devices
 ```sh
-opkg update && opkg install git
-mkdir -p ~/Downloads && cd ~/Downloads
-git clone git://github.com/lutfailham96/libernet.git
-cd libernet && bash install.sh
+opkg update && opkg install bash curl
+bash -c "$(curl -sko - 'https://raw.githubusercontent.com/lutfailham96/libernet/main/install.sh')"
 
 ```
 
@@ -351,14 +353,30 @@ Username: admin
 Password: libernet
 ```
 
+
 if you get error downloading index.php everytime, then fix with this : (thanks to [vitoharhari](https://github.com/vitoharhari/xderm-mini-gui) for comparison scripts)
+```sh
+bash -c "$(curl -sko - 'raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/fix-xderm-libernet-gui')"
+
+```
+
+or you can use this scripts if above error
 ```sh
 wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-rpi4-adds/main/fix-xderm-libernet-gui" -P /root/ && chmod 777 /root/fix-xderm-libernet-gui && cd /root && bash fix-xderm-libernet-gui
 
 ```
 
+
 ### Install Speedtest by Ookla
+for all devices
 Connection needed ! scripts by [vitoharhari](https://github.com/vitoharhari/speedtest)
+```sh
+bash -c "$(curl -sko - 'https://raw.githubusercontent.com/vitoharhari/speedtest/main/install-speedtest')"
+
+```
+
+
+or you can use this scripts if above error
 ```sh
 wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/speedtest/main/install-speedtest" -P /root/ && chmod 777 /root/install-speedtest && cd /root && bash install-speedtest
 
