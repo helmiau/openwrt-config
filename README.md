@@ -1,5 +1,5 @@
-## OpenWrt Raspberry Pi 4 (Model B)
-Index of additional setup for OpenWRT Raspberry Pi 4 (Model B)
+## My OpenWrt Settings
+Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300M Nand Ext
 
 About firmware
 - [Source firmware](https://github.com/helmiau/openwrt-rpi4-adds#source-firmware)  |  [Firmware information and features](https://github.com/helmiau/openwrt-rpi4-adds#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-rpi4-adds#firmware-installation)
