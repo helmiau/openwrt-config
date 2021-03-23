@@ -14,7 +14,7 @@ About Additions
 - [Install Neofetch](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-neofetch)
 - [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
 - [Install Speedtest by Ookla](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-speedtest-by-ookla)
-- [Setting up load balance for vpn injection](https://github.com/helmiau/openwrt-config/blob/main/README.md/blob/main/loadbalance-setting.md#setting-up-load-balance-with-mwan3-for-all-devices)
+- [Setting up load balance for vpn injection](https://github.com/helmiau/openwrt-config/blob/main/loadbalance-setting.md#setting-up-load-balance-with-mwan3-for-all-devices)
 - [Seting up ZTE F609 V3](https://github.com/helmiau/openwrt-config/blob/main/zte-f609-v3-conf/setting-zte-f609-v3.md#setting-zte-f609-v3-build-jun-2020)
 
 ####################################################
