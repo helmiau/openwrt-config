@@ -2,16 +2,16 @@
 Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300M Nand Ext
 
 About firmware
-- [Source firmware](https://github.com/helmiau/openwrt-config#source-firmware)  |  [Firmware information and features](https://github.com/helmiau/openwrt-config#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-config#firmware-installation)
+- [Source firmware](https://github.com/helmiau/openwrt-config/blob/main/README.md#source-firmware)  |  [Firmware information and features](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-installation)
 
 About Additions
-- [AdGuardHome Installation](https://github.com/helmiau/openwrt-config#adguardhome-installation)
-- [Simple Adblock](https://github.com/helmiau/openwrt-config#simple-adblock-installation)
-- [Debloating/Removing/Uninstalling unused packages](https://github.com/helmiau/openwrt-config#uninstall-unused-packages)
-- [Install Neofetch](https://github.com/helmiau/openwrt-config#install-neofetch)
-- [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-config#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
-- [Install Speedtest by Ookla](https://github.com/helmiau/openwrt-config#install-speedtest-by-ookla)
-- [Setting up load balance for vpn injection](https://github.com/helmiau/openwrt-config/blob/main/loadbalance-setting.md#setting-up-load-balance-with-mwan3-for-all-devices)
+- [AdGuardHome Installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#adguardhome-installation)
+- [Simple Adblock](https://github.com/helmiau/openwrt-config/blob/main/README.md#simple-adblock-installation)
+- [Debloating/Removing/Uninstalling unused packages](https://github.com/helmiau/openwrt-config/blob/main/README.md#uninstall-unused-packages)
+- [Install Neofetch](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-neofetch)
+- [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
+- [Install Speedtest by Ookla](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-speedtest-by-ookla)
+- [Setting up load balance for vpn injection](https://github.com/helmiau/openwrt-config/blob/main/README.md/blob/main/loadbalance-setting.md#setting-up-load-balance-with-mwan3-for-all-devices)
 
 
 ####################################################
