@@ -6,7 +6,9 @@ Bridge mode itself is widely used to facilitate connection to the router so that
 To outsmart if the F609 modem you are using doesn't have Bridge Connection mode , you can use itUser Configuration Management is available on this blog to activate Bridge Connection mode.
 
 You can download the user configuration file below:
-This [file](https://raw.githubusercontent.com/helmiau/openwrt-config/main/zte-f609-v3-conf/User%20Configuration.bin) contains only bridge connection mode without VLAN
+
+This [file](https://raw.githubusercontent.com/helmiau/openwrt-config/main/zte-f609-v3-conf/User%20Configuration.bin) contains only bridge connection mode without VLAN.
+
 This [file](https://raw.githubusercontent.com/helmiau/openwrt-config/main/zte-f609-v3-conf/User%20Configuration%20with%20VLAN.bin), contains the bridge connection mode with VLANs. Consists of VLAN IDs 1 to 5. You can see the value or value of the VLAN below:
 ```sh
 bridge-vlan-1 => VLAN ID = 1
