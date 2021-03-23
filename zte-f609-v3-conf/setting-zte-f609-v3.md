@@ -22,7 +22,7 @@ The User Configuration files above is for version **3 (Hardware Version: V5.3)**
 
 ![bridge-connection-mode-zte-f609](https://user-images.githubusercontent.com/20932301/112091180-7c97ad80-8bc7-11eb-8ae5-d66c8a9366a7.jpg)
 
-### Steps
+### Installation Steps
 - Log in to the modem as admin by accessing the address http://192.168.1.1 (ZTE F609 modem default address).
 Default login info :
 ```sh
@@ -34,7 +34,40 @@ After entering the modem, then click the ```Restore Configuration``` button. The
 
 ![user-configuration-management](https://user-images.githubusercontent.com/20932301/112091724-984f8380-8bc8-11eb-9b8b-ae80ccf0c1c9.jpg)
 
-- Then log back into the modem. Enter the menu ```Network >> WAN Configuration```.
+- Then log back into the modem.
+##### For the IP Address, Username and Password for the configuration file above:
+```
+IP Address   : 192.168.1.1
+SSID         : hotspot.nuslab.com
+Username     : admin 
+Password     : Telkomdso123
+```
+
+- Enter the menu ```Network >> WAN Configuration```.
 There will be a **Connection Name** setting with the name: ***bridge only*** or ***bridge-vlan-1*** to ***bridge-vlan-5*** with the **Type: Bridge Connection** that was disabled which was made previously through the ***User Configuration Management*** above.
+
+![image](https://user-images.githubusercontent.com/20932301/112093617-588a9b00-8bcc-11eb-94b7-032b260240ba.png)
+
+- So that the LAN and WiFi ports can be used as Bridge mode, enter the menu ```Network >> WAN >> Port Binding``` to activate the port you want to bridge.
+Until this step has been completed and the modem can be used for Bridge Connection mode .
+
+![image](https://user-images.githubusercontent.com/20932301/112093781-a3a4ae00-8bcc-11eb-9509-21cb8eff67ab.png)
+
+##### Note : I use above setting sample because LAN 3, 4 for output connection only
+
+### Additional Settings for OpenWrt
+- Go to ```LAN >> DHCP Server```
+- Set ```LAN IP Address```, ```DNS Server1 IP Address```, and ```Default Gateway``` with your OpenWrt WebUi IP Address, and change the numbers after last dot with 20 or something else. this setting will allow you to access router WebUi under OpenWrt connection.
+For an example : my OpenWrt router IP is 192.168.1.1, then i set the ```LAN IP Address``` with 192.168.1.20
+
+![image](https://user-images.githubusercontent.com/20932301/112094315-a358e280-8bcd-11eb-8029-f686be18ec89.png)
+
+- Then uncheck the ```Enable DHCP Server```
+![image](https://user-images.githubusercontent.com/20932301/112094497-f6cb3080-8bcd-11eb-8312-107926fd31e4.png)
+
+- Set ```DHCP Start IP Address```
+![image](https://user-images.githubusercontent.com/20932301/112094528-05b1e300-8bce-11eb-95e9-198b4028399d.png)
+
+- The click ```Submit``` button
 
 
