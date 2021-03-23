@@ -1,5 +1,5 @@
 ## Setting ZTE F609 V3 Build JUN 2020
-###### also work for older series too with same hardware and firmware version
+###### also work for older series too with same hardware and firmware version [source](https://www.nuslab.com/2020/01/solusi-zte-f609-tidak-ada-mode-bridge-connection.html)
 
 For those who have experienced the ZTE F609 modem case that does not have a Bridge Connection mode, it is because the software version does not activate the Bridge Connection mode alias it is locked or locked from there.
 
