@@ -5,7 +5,7 @@ About firmware
 ##### Raspberry Pi 1B/2B/3B/3B+/4B
 - [Source firmware](https://github.com/helmiau/openwrt-config/blob/main/README.md#source-firmware)  |  [Firmware information and features](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-installation)
 ##### Gl.iNet GL-AR300M NAND128 Ext
-- [Official Gl.iNet Firmware](https://dl.gl-inet.com/firmware/ar300m/nand/)  |  [OpenWrt Official](https://downloads.openwrt.org/snapshots/targets/ath79/nand/)
+- [Official Gl.iNet Firmware](https://dl.gl-inet.com/firmware/ar300m/nand/)  |  [OpenWrt Official SNAPSHOT](https://downloads.openwrt.org/snapshots/targets/ath79/nand/)
 
 About Additions
 - [AdGuardHome Installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#adguardhome-installation)
