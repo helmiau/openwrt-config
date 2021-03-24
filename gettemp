@@ -1,0 +1,5 @@
+#!/bin/sh
+tempcat="$(cat /sys/devices/virtual/thermal/thermal_zone0/temp)"
+temp=$(($tempcat/1000))
+degree="$(echo $'\xc2\xb0'C)"
+echo $temp$degree
