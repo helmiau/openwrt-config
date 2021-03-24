@@ -17,6 +17,7 @@ About Additions
 - [Setting up load balance for vpn injection](https://github.com/helmiau/openwrt-config/blob/main/loadbalance-setting.md#setting-up-load-balance-with-mwan3-for-all-devices)
 - [Seting up ZTE F609 V3](https://github.com/helmiau/openwrt-config/blob/main/zte-f609-v3-conf/setting-zte-f609-v3.md#setting-zte-f609-v3-build-jun-2020)
 - [Add device temperature to ```Status >> Overview >> System``` status](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-device-temperature-to-status--overview--system-status)
+- [Install Aria2, Portainer, Emby, Samba and Adding HDD](https://github.com/helmiau/openwrt-config/blob/main/others/aria2.md#install-aria2)
 
 ####################################################
 
