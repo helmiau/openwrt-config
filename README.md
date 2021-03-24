@@ -394,7 +394,7 @@ wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/speed
 
 ### Add device temperature to ```Status >> Overview >> System``` status
 for all devices
-Connection needed ! scripts by [vitoharhari](https://github.com/vitoharhari/speedtest)
+Connection needed ! [scripts source here](https://web.facebook.com/groups/443024392562406/permalink/1542600652604769/)
 ```sh
 wget -O /bin/gettemp "https://raw.githubusercontent.com/helmiau/openwrt-config/main/gettemp"
 chmod +x /bin/gettemp
