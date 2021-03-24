@@ -394,7 +394,7 @@ wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/speed
 ```
 
 ### Add device temperature to ```Status >> Overview >> System``` status
-for all devices
+for all devices with OpenWrt 18.x/19.x version
 Connection needed ! [scripts source here](https://web.facebook.com/groups/443024392562406/permalink/1542600652604769/)
 ```sh
 wget -O /bin/gettemp "https://raw.githubusercontent.com/helmiau/openwrt-config/main/gettemp"
@@ -427,6 +427,15 @@ Find this line :
 Add scripts below after line ```<tr><td width="33%"><%:CPU usage (%)%></td><td id="cpuusage">-</td></tr>```
 ```
 <tr><td width="33%"><%:Device Temperature></td><%=luci.sys.exec("bash /bin/gettemp")%></td></tr>
+
+```
+
+Or you can use scripts below for automatic installation (for OpenWrt 19.07 and up). [credits here](https://github.com/kevindoni/temperatur-luci)
+```sh
+wget --no-check-certificate -O /tmp/luci-app-temp-status_0.1-2_all.ipk https://raw.githubusercontent.com/.../luci-app-temp...
+opkg install /tmp/luci-app-temp-status_0.1-2_all.ipk
+rm /tmp/luci-app-temp-status_0.1-2_all.ipk
+/etc/init.d/rpcd restart
 
 ```
 [**notes**](links)
