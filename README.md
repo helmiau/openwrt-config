@@ -391,4 +391,40 @@ wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/speed
 
 ```
 
+### Add device temperature to ```Status >> Overview >> System``` status
+for all devices
+Connection needed ! scripts by [vitoharhari](https://github.com/vitoharhari/speedtest)
+```sh
+wget -O /bin/gettemp "https://raw.githubusercontent.com/helmiau/openwrt-config/main/gettemp"
+chmod +x /bin/gettemp
+```
+Edit file : ```/usr/lib/lua/luci/view/admin_status/index.htm```
+
+Find this line :
+```sh
+<fieldset class="cbi-section">
+	<legend><%:System%></legend>
+
+	<table width="100%" cellspacing="10">
+		<tr><td width="33%"><%:Hostname%></td><td><%=luci.sys.hostname() or "?"%></td></tr>
+		<tr><td width="33%"><%:Model%></td><td><%=pcdata(boardinfo.model or "?")%> <%=luci.sys.exec("cat /etc/bench.log") or ""%></td></tr>
+		<tr><td width="33%"><%:Architecture%></td><td id="cpuinfo">-</td></tr>
+		<tr><td width="33%"><%:Firmware Version%></td><td>
+			<%=pcdata(ver.distname)%> <%=pcdata(ver.distversion)%> /
+			<%=pcdata(ver.luciname)%> (<%=pcdata(ver.luciversion)%>)
+		</td></tr>
+		<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr>
+		<tr><td width="33%"><%:Local Time%></td><td id="localtime">-</td></tr>
+		<tr><td width="33%"><%:Uptime%></td><td id="uptime">-</td></tr>
+		<tr><td width="33%"><%:Load Average%></td><td id="loadavg">-</td></tr>
+		<tr><td width="33%"><%:CPU usage (%)%></td><td id="cpuusage">-</td></tr>
+	</table>
+</fieldset>
+
+```
+Add scripts below after line ```<tr><td width="33%"><%:CPU usage (%)%></td><td id="cpuusage">-</td></tr>```
+```
+<tr><td width="33%"><%:Device Temperature></td><%=luci.sys.exec("bash /bin/gettemp")%></td></tr>
+
+```
 [**notes**](links)
