@@ -393,6 +393,12 @@ wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/speed
 
 ```
 
+Alpha test scripts
+```
+wget -O /bin/speedtest "https://raw.githubusercontent.com/vitoharhari/speedtest/main/speedtest"
+chmod +x /bin/speedtest
+```
+
 ### Add device temperature to ```Status >> Overview >> System``` status
 for all devices with OpenWrt 18.x/19.x version
 Connection needed ! [scripts source here](https://web.facebook.com/groups/443024392562406/permalink/1542600652604769/)
