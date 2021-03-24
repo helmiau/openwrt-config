@@ -369,6 +369,12 @@ wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-c
 
 ```
 
+Auto reconnect after boot by ```System >> Startup >> Local Startup``` and add scripts below
+````
+#!/bin/bash
+sleep 20 && export LIBERNET_DIR="/root/libernet" && /root/libernet/bin/service.sh -as > /dev/null 2>&1 &
+exit 0
+````
 
 ### Install Speedtest by Ookla
 for all devices
