@@ -80,3 +80,5 @@ services:
  1. login ke luci, klik nas, klik network share.
  2. klik add, lalu isikan nama dan path yang akan di share, 
  3. save and apply. done
+
+##### sumber artikel [disini](https://pastebin.com/raw/pLV5TfM2) dan [post fb disini](https://web.facebook.com/groups/443024392562406/permalink/1535742596623908/?comment_id=1543673359164165&reply_comment_id=1543696952495139&notif_id=1616556449348108&ref=notif&notif_t=group_comment_mention)
