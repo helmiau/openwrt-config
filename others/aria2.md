@@ -1,3 +1,9 @@
+## Install Aria2, Portainer, Emby, Samba and Adding HDD
+Syarat & ketentuan. 
+1. Wajib pakai firmware openwrt [dari sini](https://github.com/ophub/amlogic-s9xxx-openwrt).
+2. Pilih yang ```s905x```
+3. Sdcard wajib extend maksimal. Saya pakai sdcard 16gb. Saya extend ke 12gb. 
+
 ### Install Aria2
 1. install package yang dibutuhkan 
 ```
