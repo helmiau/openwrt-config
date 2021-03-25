@@ -380,24 +380,26 @@ exit 0
 
 ### Install Speedtest by Ookla
 for all devices
+
+![image](https://user-images.githubusercontent.com/20932301/112409164-8d712c00-8d4b-11eb-9e1a-54a32c9b0b3d.png)
+
 Connection needed ! scripts by [vitoharhari](https://github.com/vitoharhari/speedtest)
+
+Install with this scripts
+```
+wget -O /bin/speedtest "https://raw.githubusercontent.com/vitoharhari/speedtest/main/speedtest" && chmod +x /bin/speedtest
+```
+or you can use this scripts
 ```sh
 bash -c "$(curl -sko - 'https://raw.githubusercontent.com/vitoharhari/speedtest/main/install-speedtest')"
 
 ```
-
-
 or you can use this scripts if above error
 ```sh
 wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/speedtest/main/install-speedtest" -P /root/ && chmod 777 /root/install-speedtest && cd /root && bash install-speedtest
 
 ```
 
-Alpha test scripts
-```
-wget -O /bin/speedtest "https://raw.githubusercontent.com/vitoharhari/speedtest/main/speedtest"
-chmod +x /bin/speedtest
-```
 
 ### Add device temperature to ```Status >> Overview >> System``` status
 for all devices with OpenWrt 18.x/19.x version
