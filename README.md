@@ -2,10 +2,9 @@
 Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300M Nand Ext, also for other devices too.
 
 About firmware
-##### Raspberry Pi 1B/2B/3B/3B+/4B
-- [Source firmware](https://github.com/helmiau/openwrt-config/blob/main/README.md#source-firmware)  |  [Firmware information and features](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-installation)
-##### Gl.iNet GL-AR300M NAND128 Ext
-- [Official Gl.iNet Firmware](https://dl.gl-inet.com/firmware/ar300m/nand/)  |  [OpenWrt Official SNAPSHOT](https://downloads.openwrt.org/snapshots/targets/ath79/nand/)
+##### Raspberry Pi 1B/2B/3B/3B+/4B  |  [Official Snapshot Firmware](https://downloads.openwrt.org/snapshots/targets/bcm27xx/bcm2711/) |  [Source Lean Firmware](https://github.com/helmiau/openwrt-config/blob/main/README.md#source-firmware)  |  [Lean firmware information and features](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-installation)
+##### Gl.iNet GL-AR300M NAND128 Ext  |  [Official Gl.iNet Firmware](https://dl.gl-inet.com/firmware/ar300m/nand/)  |  [OpenWrt Official SNAPSHOT](https://downloads.openwrt.org/snapshots/targets/ath79/nand/)
+##### STB Amlogic S9xxx are S905x3, S905x2, S922x, S905x, S905d, s912, etc. such as Phicomm-N1, Octopus-Planet, X96-Max+, HK1-Box, H96-Max-X3, Belink GT-King, Belink GT-King Pro, UGOOS AM6 Plus, Fiberhome HG680P, ZTE B860H, etc. |  [Ophub firmware info](https://github.com/ophub/amlogic-s9xxx-openwrt#openwrt-for-amlogic-s9xxx-stb)  |  [Download Ophub firmware](https://github.com/ophub/amlogic-s9xxx-openwrt/releases/latest)
 
 About Additions
 - [AdGuardHome Installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#adguardhome-installation)
