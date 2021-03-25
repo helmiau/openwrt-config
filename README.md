@@ -338,10 +338,13 @@ opkg --force-overwrite install git gawk grep sed coreutils-sort ip6tables-mod-na
 
 ### Install Neofetch
 for all devices
+
 forked from [**dylanaraps/neofetch**](https://github.com/dylanaraps/neofetch) 
+
+![image](https://user-images.githubusercontent.com/20932301/112409376-f35db380-8d4b-11eb-8e94-8adbf6699765.png)
+
 ```sh
-wget -O /bin/neofetch "https://raw.githubusercontent.com/helmiau/openwrt-config/main/neopet"
-chmod +x /bin/neofetch
+wget -O /bin/neofetch "https://raw.githubusercontent.com/helmiau/openwrt-config/main/neopet" && chmod +x /bin/neofetch
 ```
 
 ### Install [**Libernet for SSH SSL Tunneling by lutfailham96**](https://github.com/lutfailham96/libernet)
