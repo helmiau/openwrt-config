@@ -442,7 +442,7 @@ Add scripts below after line ```<tr><td width="33%"><%:CPU usage (%)%></td><td i
 
 Or you can use scripts below for automatic installation (for OpenWrt 19.07 and up). [credits here](https://github.com/kevindoni/temperatur-luci)
 ```sh
-wget --no-check-certificate -O /tmp/luci-app-temp-status_0.1-2_all.ipk https://raw.githubusercontent.com/.../luci-app-temp...
+wget --no-check-certificate -O /tmp/luci-app-temp-status_0.1-2_all.ipk https://raw.githubusercontent.com/kevindoni/temperatur-luci/main/packages/19.07/luci-app-temp-status_0.1-2_all.ipk
 opkg install /tmp/luci-app-temp-status_0.1-2_all.ipk
 rm /tmp/luci-app-temp-status_0.1-2_all.ipk
 /etc/init.d/rpcd restart
