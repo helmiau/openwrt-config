@@ -1,12 +1,12 @@
 ## My OpenWrt Settings
 Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300M Nand Ext, also for other devices too.
 
-##### About firmware
+#### About firmware
 - Raspberry Pi 1B/2B/3B/3B+/4B  |  [Official Firmware](https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi) |  [Source Lean Firmware](https://github.com/helmiau/openwrt-config/blob/main/README.md#source-firmware)  |  [Lean firmware information and features](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-installation)
 - Gl.iNet GL-AR300M NAND128 Ext  |  [Official Gl.iNet Firmware](https://dl.gl-inet.com/firmware/ar300m/nand/)  |  [OpenWrt Official SNAPSHOT](https://downloads.openwrt.org/snapshots/targets/ath79/nand/)  |  [Custom Firmware](https://github.com/CWZ7605/slo/actions)
 - STB Amlogic S9xxx are S905x3, S905x2, S922x, S905x, S905d, s912, etc. such as Phicomm-N1, Octopus-Planet, X96-Max+, HK1-Box, H96-Max-X3, Belink GT-King, Belink GT-King Pro, UGOOS AM6 Plus, Fiberhome HG680P, ZTE B860H, etc. |  [Ophub firmware info](https://github.com/ophub/amlogic-s9xxx-openwrt#openwrt-for-amlogic-s9xxx-stb)  |  [Download Ophub firmware](https://github.com/ophub/amlogic-s9xxx-openwrt/releases/latest)
 
-##### OpenWrt Additions
+#### OpenWrt Additions
 - [AdGuardHome Installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#adguardhome-installation)
 - [Simple Adblock](https://github.com/helmiau/openwrt-config/blob/main/README.md#simple-adblock-installation)
 - [Debloating/Removing/Uninstalling unused packages](https://github.com/helmiau/openwrt-config/blob/main/README.md#uninstall-unused-packages)
@@ -17,9 +17,9 @@ Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300
 - [Add device temperature to ```Status >> Overview >> System``` status](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-device-temperature-to-status--overview--system-status)
 - [Install Aria2, Portainer, Emby, Samba and Adding HDD](https://github.com/helmiau/openwrt-config/blob/main/others/aria2.md#install-aria2-portainer-emby-samba-and-adding-hdd)
 
-##### Setup router for Access Point
-- [Setting up ZTE F609 V3](https://github.com/helmiau/openwrt-config/blob/main/zte-f609-v3-conf/setting-zte-f609-v3.md#setting-zte-f609-v3-build-jun-2020)
-- [Setup for Xiaomi Mi Router 4A Chinese for OpenWrt using LAN Cable](https://github.com/helmiau/openwrt-config/blob/main/others/mi-router-4a-gigabit.md#setup-mi-router-4a-gigabit-for-ap-openwrt-using-lan-cable)
+#### Setup router for Access Point
+- [Setup ZTE F609 V3](https://github.com/helmiau/openwrt-config/blob/main/zte-f609-v3-conf/setting-zte-f609-v3.md#setting-zte-f609-v3-build-jun-2020)
+- [Setup for Xiaomi Mi Router 4A for OpenWrt using LAN Cable](https://github.com/helmiau/openwrt-config/blob/main/others/mi-router-4a-gigabit.md#setup-mi-router-4a-gigabit-for-ap-openwrt-using-lan-cable)
 
 ####################################################
 
