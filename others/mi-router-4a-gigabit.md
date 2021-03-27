@@ -1,4 +1,6 @@
 # Setup Mi Router 4A Gigabit for AP OpenWrt using LAN Cable
+- [Setup Mi for Chinese firmware](https://github.com/helmiau/openwrt-config/blob/main/others/mi-router-4a-gigabit.md#setup-mi-router-4a-gigabit-chinese)
+- [Setup Mi for English firmware](https://github.com/helmiau/openwrt-config/blob/main/others/mi-router-4a-gigabit.md#setup-mi-router-4a-gigabit-english)
 
 ## Setup Mi Router 4A Gigabit (Chinese)
 1. Plug in power supply and LAN Cable to WAN Port
