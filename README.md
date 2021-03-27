@@ -18,7 +18,7 @@ About Additions
 - [Add device temperature to ```Status >> Overview >> System``` status](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-device-temperature-to-status--overview--system-status)
 - [Install Aria2, Portainer, Emby, Samba and Adding HDD](https://github.com/helmiau/openwrt-config/blob/main/others/aria2.md#install-aria2-portainer-emby-samba-and-adding-hdd)
 - [Setup for Xiaomi Mi Router 4A Chinese for OpenWrt using LAN Cable](https://github.com/helmiau/openwrt-config/blob/main/others/mi-router-4a-gigabit.md#setup-mi-router-4a-gigabit-chinese-for-ap-openwrt-using-lan-cable)
-- 
+
 ####################################################
 
 ### Source Firmware
