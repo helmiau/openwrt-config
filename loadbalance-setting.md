@@ -166,3 +166,6 @@ config interface 'ueth1'
 ```
 - Then copy and paste ```config interface 'interface_name'``` until end of line of scripts above
 - Then edit it to other interface name
+
+Note : if you want to set (if no internet connection, then ISP off, then mwan3 restart), just change ```list track_ip '0.0.0.0'``` to ```list track_ip '8.8.8.8'``` or something else.
+
