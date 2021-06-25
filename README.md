@@ -17,6 +17,7 @@ Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300
 - [Setting up load balance / mwan3 for vpn injection](https://github.com/helmiau/openwrt-config/blob/main/loadbalance-setting.md#setting-up-load-balance-with-mwan3-for-all-devices)
 - [Add device temperature to ```Status >> Overview >> System``` status](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-device-temperature-to-status--overview--system-status)
 - [Install Aria2, Portainer, Emby, Samba and Adding HDD](https://github.com/helmiau/openwrt-config/blob/main/others/aria2.md#install-aria2-portainer-emby-samba-and-adding-hdd)
+- [Setup OpenClash for OpenWrt -Installation excluded, only setup for OpenClash usage-](https://github.com/helmiau/openwrt-config/blob/main/others/openclash-for-openwrt-setup.md#openclash-setup-for-openwrt)
 
 #### Setup router for Access Point
 - [Setup ZTE F609 V3](https://github.com/helmiau/openwrt-config/blob/main/zte-f609-v3-conf/setting-zte-f609-v3.md#setting-zte-f609-v3-build-jun-2020)
