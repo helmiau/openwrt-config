@@ -1,8 +1,8 @@
 ## OpenClash Setup for OpenWrt
 
-[Indonesian Guide]()
+[Indonesian Guide](https://github.com/helmiau/openwrt-config/blob/main/others/openclash-for-openwrt-setup.md#indonesian-guide)
 
-[English Guide]()
+[English Guide](https://github.com/helmiau/openwrt-config/blob/main/others/openclash-for-openwrt-setup.md#english-guide)
 
 
 ## Indonesian Guide
