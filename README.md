@@ -3,8 +3,9 @@ Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300
 
 #### About firmware
 - Raspberry Pi 1B/2B/3B/3B+/4B  |  [Official Firmware](https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi) |  [Source Lean Firmware](https://github.com/helmiau/openwrt-config/blob/main/README.md#source-firmware)  |  [Lean firmware information and features](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-installation)
-- Gl.iNet GL-AR300M NAND128 Ext  |  [Official Gl.iNet Firmware](https://dl.gl-inet.com/firmware/ar300m/nand/)  |  [OpenWrt Official SNAPSHOT](https://downloads.openwrt.org/snapshots/targets/ath79/nand/)  |  [Custom Firmware](https://github.com/CWZ7605/slo/actions)
+- Gl.iNet GL-AR300M NAND128 Ext  |  [Official Gl.iNet Firmware](https://dl.gl-inet.com/firmware/ar300m/nand/)  |  [OpenWrt Official SNAPSHOT](https://downloads.openwrt.org/snapshots/targets/ath79/nand/)  |  [Custom Firmware by ROOter by Of Modems and Men](https://www.ofmodemsandmen.com/download/GoldenOrb/16meg/gl-ar300m-GO2020-03-01.zip) | [X-Wrt Factory IMG](https://downloads.x-wrt.com/rom/x-wrt-9.0-b202106212213-ath79-nand-glinet_gl-ar300m-nand-squashfs-factory.img) | [X-Wrt sysupgrade BIN](https://downloads.x-wrt.com/rom/x-wrt-9.0-b202106212213-ath79-nand-glinet_gl-ar300m-nand-squashfs-sysupgrade.img)
 - STB Amlogic S9xxx are S905x3, S905x2, S922x, S905x, S905d, s912, etc. such as Phicomm-N1, Octopus-Planet, X96-Max+, HK1-Box, H96-Max-X3, Belink GT-King, Belink GT-King Pro, UGOOS AM6 Plus, Fiberhome HG680P, ZTE B860H, etc. |  [Ophub firmware info](https://github.com/ophub/amlogic-s9xxx-openwrt#openwrt-for-amlogic-s9xxx-stb)  |  [Download Ophub firmware](https://github.com/ophub/amlogic-s9xxx-openwrt/releases/latest)
+- Other custom firmware by X-WRT can be downloaded [here](https://downloads.x-wrt.com/rom/)
 
 #### OpenWrt Additions
 - [AdGuardHome Installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#adguardhome-installation)
