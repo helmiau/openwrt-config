@@ -41,7 +41,7 @@ taruh sebelum ```exit 0```
 ### Install portainer
 1. ketikkan perintah berikut di terminal, tunggu sampai selesai
 ```
-docker pull linuxserver/emby
+docker pull portainer/portainer
 ```
 2. ketikkan perintah berikut di terminal
 ```
