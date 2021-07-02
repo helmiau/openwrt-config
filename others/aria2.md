@@ -1,6 +1,6 @@
 ## Install Aria2, Portainer, Emby, Samba and Adding HDD
 Syarat & ketentuan. 
-1. Wajib pakai firmware openwrt [dari sini](https://github.com/ophub/amlogic-s9xxx-openwrt).
+1. Wajib pakai firmware openwrt [dari sini](https://github.com/ophub/amlogic-s9xxx-openwrt) jika anda pengguna STB ya, kalau user raspberry seperti saya ya download firmware yang lain di link lain dong.
 2. Pilih yang ```s905x```
 3. Sdcard wajib extend maksimal. Saya pakai sdcard 16gb. Saya extend ke 12gb. 
 
@@ -39,11 +39,15 @@ taruh sebelum ```exit 0```
 1. Untuk add hddnya, saya sudah buat hdd saya menjadi partisi ntfs, untuk add hdd bisa [ikuti cara disini](https://openwrt.org/docs/guide-user/storage/writable_ntfs)
 
 ### Install portainer
-1. ketikkan perintah berikut di terminal
+1. ketikkan perintah berikut di terminal, tunggu sampai selesai
+```
+docker pull linuxserver/emby
+```
+2. ketikkan perintah berikut di terminal
 ```
 docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 ```
-2. setelah selesai buka http://192.168.1.1:9000 set username & password, ketik next, pilih local lalu klik next. done
+3. setelah selesai buka http://192.168.1.1:9000 set username & password, ketik next, pilih local lalu klik next. done
 
 ### Install Emby
 1. ketikkan perintah berikut di terminal 
