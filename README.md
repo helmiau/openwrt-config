@@ -19,6 +19,7 @@ Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300
 - [Install Aria2, Portainer, Emby, Samba and Adding HDD](https://github.com/helmiau/openwrt-config/blob/main/others/aria2.md#install-aria2-portainer-emby-samba-and-adding-hdd)
 - [Setup OpenClash for OpenWrt -Installation excluded, only setup for OpenClash usage-](https://github.com/helmiau/openwrt-config/blob/main/others/openclash-for-openwrt-setup.md#openclash-setup-for-openwrt)
 - [Add My Public IP Information to OpenWrt terminal command](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-my-ip-address-information)
+- [Add RAM Usage/Checker to OpenWrt terminal command](https://github.com/helmiau/openwrt-config/blob/main/README.md#ram-usage-checker)
 
 #### Setup router for Access Point
 - [Setup ZTE F609 V3](https://github.com/helmiau/openwrt-config/blob/main/zte-f609-v3-conf/setting-zte-f609-v3.md#setting-zte-f609-v3-build-jun-2020)
@@ -462,4 +463,18 @@ chmod +x /bin/myip
 ```
 then run **```myip```** command using terminal
 
-[**notes**](links)
+### RAM Usage Checker
+
+![image](https://user-images.githubusercontent.com/20932301/126037887-c69a211c-dec9-4f00-a443-8ad6b437e696.png)
+
+for all devices with OpenWrt or other linux distribution
+Connection needed !
+```sh
+wget -O /bin/ram "https://raw.githubusercontent.com/wegare123/ram/main/ram.sh" && chmod +x /bin/ram
+```
+then run **```ram```** command using terminal
+
+
+
+
+[**My Contacts Site**](http://me.helmiau.my.id)
