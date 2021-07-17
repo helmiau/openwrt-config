@@ -18,6 +18,7 @@ Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300
 - [Add device temperature to ```Status >> Overview >> System``` status](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-device-temperature-to-status--overview--system-status)
 - [Install Aria2, Portainer, Emby, Samba and Adding HDD](https://github.com/helmiau/openwrt-config/blob/main/others/aria2.md#install-aria2-portainer-emby-samba-and-adding-hdd)
 - [Setup OpenClash for OpenWrt -Installation excluded, only setup for OpenClash usage-](https://github.com/helmiau/openwrt-config/blob/main/others/openclash-for-openwrt-setup.md#openclash-setup-for-openwrt)
+- [Add My Public IP Information to OpenWrt terminal command](https://github.com/helmiau/openwrt-config/blob/main/others/openclash-for-openwrt-setup.md#add-my-ip-address-information)
 
 #### Setup router for Access Point
 - [Setup ZTE F609 V3](https://github.com/helmiau/openwrt-config/blob/main/zte-f609-v3-conf/setting-zte-f609-v3.md#setting-zte-f609-v3-build-jun-2020)
@@ -453,4 +454,13 @@ rm /tmp/luci-app-temp-status_0.1-2_all.ipk
 /etc/init.d/rpcd restart
 
 ```
+
+### Add My IP Address information
+for all devices with OpenWrt or other linux distribution
+Connection needed !
+```sh
+wget -O /bin/myip "https://raw.githubusercontent.com/helmiau/OpenWrt-Rpi/main/files/bin/myip"
+chmod +x /bin/myip
+```
+
 [**notes**](links)
