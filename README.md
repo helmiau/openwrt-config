@@ -351,6 +351,7 @@ forked from [**dylanaraps/neofetch**](https://github.com/dylanaraps/neofetch)
 ```sh
 wget -O /bin/neofetch "https://raw.githubusercontent.com/helmiau/openwrt-config/main/neopet" && chmod +x /bin/neofetch
 ```
+then run **```neofetch```** command using terminal to run it.
 
 ### Install [**Libernet for SSH SSL Tunneling by lutfailham96**](https://github.com/lutfailham96/libernet)
 for all devices
