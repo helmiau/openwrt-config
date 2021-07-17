@@ -467,6 +467,7 @@ then run **```myip```** command using terminal
 
 ![image](https://user-images.githubusercontent.com/20932301/126037887-c69a211c-dec9-4f00-a443-8ad6b437e696.png)
 
+Thanks to @[wegare a.k.a Wega Regianto](https://github.com/wegare123/ram) for this program
 for all devices with OpenWrt or other linux distribution
 Connection needed !
 ```sh
