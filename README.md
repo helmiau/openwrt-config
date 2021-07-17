@@ -18,7 +18,7 @@ Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300
 - [Add device temperature to ```Status >> Overview >> System``` status](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-device-temperature-to-status--overview--system-status)
 - [Install Aria2, Portainer, Emby, Samba and Adding HDD](https://github.com/helmiau/openwrt-config/blob/main/others/aria2.md#install-aria2-portainer-emby-samba-and-adding-hdd)
 - [Setup OpenClash for OpenWrt -Installation excluded, only setup for OpenClash usage-](https://github.com/helmiau/openwrt-config/blob/main/others/openclash-for-openwrt-setup.md#openclash-setup-for-openwrt)
-- [Add My Public IP Information to OpenWrt terminal command](https://github.com/helmiau/openwrt-config/blob/main/others/openclash-for-openwrt-setup.md#add-my-ip-address-information)
+- [Add My Public IP Information to OpenWrt terminal command](https://github.com/helmiau/openwrt-config#add-my-ip-address-information)
 
 #### Setup router for Access Point
 - [Setup ZTE F609 V3](https://github.com/helmiau/openwrt-config/blob/main/zte-f609-v3-conf/setting-zte-f609-v3.md#setting-zte-f609-v3-build-jun-2020)
@@ -366,18 +366,11 @@ Username: admin
 Password: libernet
 ```
 
-
 if you get error downloading index.php everytime, then fix with this : (thanks to [vitoharhari](https://github.com/vitoharhari/xderm-mini-gui) for comparison scripts)
 ```sh
-bash -c "$(curl -sko - 'raw.githubusercontent.com/helmiau/openwrt-config/main/fix-xderm-libernet-gui')"
-
+wget -O /bin/fixphp "https://raw.githubusercontent.com/helmiau/openwrt-config/main/fix-xderm-libernet-gui" && chmod +x /bin/fixphp
 ```
-
-or you can use this scripts if above error
-```sh
-wget --no-check-certificate "https://raw.githubusercontent.com/helmiau/openwrt-config/main/fix-xderm-libernet-gui" -P /root/ && chmod 777 /root/fix-xderm-libernet-gui && cd /root && bash fix-xderm-libernet-gui
-
-```
+then run **```fixphp```** command using terminal
 
 Auto reconnect after boot by ```System >> Startup >> Local Startup``` and add scripts below
 ````
@@ -407,6 +400,7 @@ or you can use this scripts if above error
 wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/speedtest/main/install-speedtest" -P /root/ && chmod 777 /root/install-speedtest && cd /root && bash install-speedtest
 
 ```
+then run **```speedtest```** command using terminal
 
 
 ### Add device temperature to ```Status >> Overview >> System``` status
@@ -462,5 +456,6 @@ Connection needed !
 wget -O /bin/myip "https://raw.githubusercontent.com/helmiau/OpenWrt-Rpi/main/files/bin/myip"
 chmod +x /bin/myip
 ```
+then run **```myip```** command using terminal
 
 [**notes**](links)
