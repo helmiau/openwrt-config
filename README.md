@@ -13,6 +13,7 @@ Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300
 - [Debloating/Removing/Uninstalling unused packages](https://github.com/helmiau/openwrt-config/blob/main/README.md#uninstall-unused-packages)
 - [Install Neofetch](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-neofetch)
 - [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
+- [Install Xderm Mini for STB](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-xderm-mini-by-ryanfauzi1)
 - [Install Speedtest by Ookla](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-speedtest-by-ookla)
 - [Setting up load balance / mwan3 for vpn injection](https://github.com/helmiau/openwrt-config/blob/main/loadbalance-setting.md#setting-up-load-balance-with-mwan3-for-all-devices)
 - [Add device temperature to ```Status >> Overview >> System``` status](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-device-temperature-to-status--overview--system-status)
@@ -380,6 +381,32 @@ Auto reconnect after boot by ```System >> Startup >> Local Startup``` and add sc
 sleep 20 && export LIBERNET_DIR="/root/libernet" && /root/libernet/bin/service.sh -as > /dev/null 2>&1 &
 exit 0
 ````
+
+
+### Install [**Xderm Mini by ryanfauzi1**](https://github.com/ryanfauzi1/xderm-mini_GUI)
+for stb, pi3 devices
+```sh
+wget -O installer https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/installer && chmod +x installer && ./installer
+```
+
+default username and password
+```sh
+Username: admin
+Password: xderm
+```
+
+if you get **error downloading index.php** everytime, then fix with this : (thanks to [vitoharhari](https://github.com/vitoharhari/xderm-mini-gui) for comparison scripts)
+```sh
+wget -O /bin/fixphp "https://raw.githubusercontent.com/helmiau/openwrt-config/main/fix-xderm-libernet-gui" && chmod +x /bin/fixphp
+```
+then run **```fixphp```** command using terminal
+
+
+if you want to **remove login page**, then this run scripts below 
+```sh
+wget -O /bin/xderm-rmlogin "https://raw.githubusercontent.com/helmiau/openwrt-config/main/rmlogin-xderm" && chmod +x /bin/xderm-rmlogin
+```
+then run **```xderm-rmlogin```** command using terminal
 
 ### Install Speedtest by Ookla
 for all devices

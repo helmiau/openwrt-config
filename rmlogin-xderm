@@ -1,0 +1,42 @@
+#!/bin/bash
+clear
+clear
+echo -e "  ************************************************"
+echo -e "     Xderm Mini Login Page Remover by helmiau "
+echo -e "  ************************************************"
+echo -e " "
+echo -e "Notes : "
+echo -e "- This script will remove xderm-mini login page"
+echo -e "- Please clear all web history and cache after removal!"
+echo -e "- If bug occured, Open incognito tab"
+echo -e "- If bug still occured, Use other browser"
+echo -e ""
+echo -e " Process starting after 3 secs....."
+sleep 3
+echo -e " Removal process started..."
+sleep 2
+echo -e ""
+
+echo -e " Finding login.php file..."
+nyari=$(find /www/xderm)
+if [[ $nyari == *"login.php"* ]]; then
+rm -rf /www/xderm/login.php
+echo -e " login.php file deleted !"
+sleep 1
+else
+echo -e " Removal failed ! because login.php file is unavailable"
+sleep 1
+fi
+
+echo -e " Finding header.php file..."
+nyari=$(find /www/xderm)
+if [[ $nyari == *"header.php"* ]]; then
+rm -rf /www/xderm/header.php
+echo -e " header.php file deleted !"
+sleep 1
+else
+echo -e " Removal failed ! because login.php file is unavailable"
+sleep 1
+fi
+
+echo -e " Removal process finished..."
