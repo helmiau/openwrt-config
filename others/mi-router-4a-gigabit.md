@@ -2,8 +2,8 @@
 - [Factory reset device]
 - [Change Chinese firmware to Global firmware]
 - [Unbrick device]
-- [Setup for Chinese firmware](https://github.com/helmiau/openwrt-config/blob/main/others/mi-router-4a-gigabit.md#setup-mi-router-4a-gigabit-chinese)
-- [Setup for English firmware](https://github.com/helmiau/openwrt-config/blob/main/others/mi-router-4a-gigabit.md#setup-mi-router-4a-gigabit-english)
+- [Setup for Chinese firmware](#setup-mi-router-4a-gigabit-chinese)
+- [Setup for English firmware](#setup-mi-router-4a-gigabit-english)
 
 ## Setup Mi Router 4A Gigabit (Chinese)
 1. Plug in power supply and LAN Cable to WAN Port

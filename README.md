@@ -2,25 +2,25 @@
 Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300M Nand Ext, also for other devices too.
 
 #### About firmware
-- Raspberry Pi 1B/2B/3B/3B+/4B  |  [Official Firmware](https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi) |  [Source Lean Firmware](https://github.com/helmiau/openwrt-config/blob/main/README.md#source-firmware)  |  [Lean firmware information and features](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-features) | [Firmware installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#firmware-installation)
+- Raspberry Pi 1B/2B/3B/3B+/4B  |  [Official Firmware](https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi) |  [Source Lean Firmware](#source-firmware)  |  [Lean firmware information and features](#firmware-features) | [Firmware installation](#firmware-installation)
 - Gl.iNet GL-AR300M NAND128 Ext  |  [Official Gl.iNet Firmware](https://dl.gl-inet.com/firmware/ar300m/nand/)  |  [OpenWrt Official SNAPSHOT](https://downloads.openwrt.org/snapshots/targets/ath79/nand/)  |  [Custom Firmware by ROOter by Of Modems and Men](https://www.ofmodemsandmen.com/download/GoldenOrb/16meg/gl-ar300m-GO2020-03-01.zip) | [X-Wrt Factory IMG](https://downloads.x-wrt.com/rom/x-wrt-9.0-b202106212213-ath79-nand-glinet_gl-ar300m-nand-squashfs-factory.img) | [X-Wrt sysupgrade BIN](https://downloads.x-wrt.com/rom/x-wrt-9.0-b202106212213-ath79-nand-glinet_gl-ar300m-nand-squashfs-sysupgrade.img)
 - STB Amlogic S9xxx are S905x3, S905x2, S922x, S905x, S905d, s912, etc. such as Phicomm-N1, Octopus-Planet, X96-Max+, HK1-Box, H96-Max-X3, Belink GT-King, Belink GT-King Pro, UGOOS AM6 Plus, Fiberhome HG680P, ZTE B860H, etc. |  [Ophub firmware info](https://github.com/ophub/amlogic-s9xxx-openwrt#openwrt-for-amlogic-s9xxx-stb)  |  [Download Ophub firmware](https://github.com/ophub/amlogic-s9xxx-openwrt/releases/latest)
 - Other custom firmware by X-WRT can be downloaded [here](https://downloads.x-wrt.com/rom/)
 
 #### OpenWrt Additions
-- [AdGuardHome Installation](https://github.com/helmiau/openwrt-config/blob/main/README.md#adguardhome-installation)
-- [Simple Adblock](https://github.com/helmiau/openwrt-config/blob/main/README.md#simple-adblock-installation)
-- [Debloating/Removing/Uninstalling unused packages](https://github.com/helmiau/openwrt-config/blob/main/README.md#uninstall-unused-packages)
-- [Install Neofetch](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-neofetch)
-- [Install Libernet for SSH SSL Tunneling](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
-- [Install Xderm Mini for STB](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-xderm-mini-by-ryanfauzi1)
-- [Install Speedtest by Ookla](https://github.com/helmiau/openwrt-config/blob/main/README.md#install-speedtest-by-ookla)
+- [AdGuardHome Installation](#adguardhome-installation)
+- [Simple Adblock](#simple-adblock-installation)
+- [Debloating/Removing/Uninstalling unused packages](#uninstall-unused-packages)
+- [Install Neofetch](#install-neofetch)
+- [Install Libernet for SSH SSL Tunneling](#install-libernet-for-ssh-ssl-tunneling-by-lutfailham96)
+- [Install Xderm Mini for STB](#install-xderm-mini-by-ryanfauzi1)
+- [Install Speedtest by Ookla](#install-speedtest-by-ookla)
 - [Setting up load balance / mwan3 for vpn injection](https://github.com/helmiau/openwrt-config/blob/main/loadbalance-setting.md#setting-up-load-balance-with-mwan3-for-all-devices)
-- [Add device temperature to ```Status >> Overview >> System``` status](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-device-temperature-to-status--overview--system-status)
+- [Add device temperature to ```Status >> Overview >> System``` status](#add-device-temperature-to-status--overview--system-status)
 - [Install Aria2, Portainer, Emby, Samba and Adding HDD](https://github.com/helmiau/openwrt-config/blob/main/others/aria2.md#install-aria2-portainer-emby-samba-and-adding-hdd)
 - [Setup OpenClash for OpenWrt -Installation excluded, only setup for OpenClash usage-](https://github.com/helmiau/openwrt-config/blob/main/others/openclash-for-openwrt-setup.md#openclash-setup-for-openwrt)
-- [Add My Public IP Information to OpenWrt terminal command](https://github.com/helmiau/openwrt-config/blob/main/README.md#add-my-ip-address-information)
-- [Add RAM Usage/Checker to OpenWrt terminal command](https://github.com/helmiau/openwrt-config/blob/main/README.md#ram-usage-checker)
+- [Add My Public IP Information to OpenWrt terminal command](#add-my-ip-address-information)
+- [Add RAM Usage/Checker to OpenWrt terminal command](#ram-usage-checker)
 
 #### Setup router for Access Point
 - [Setup ZTE F609 V3](https://github.com/helmiau/openwrt-config/blob/main/zte-f609-v3-conf/setting-zte-f609-v3.md#setting-zte-f609-v3-build-jun-2020)
