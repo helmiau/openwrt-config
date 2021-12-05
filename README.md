@@ -381,7 +381,6 @@ if ! grep -q ".php=/usr/bin/php-cgi" /etc/config/uhttpd; then
 	/etc/init.d/uhttpd restart
 fi
 ```
-then run **```fixphp```** command using terminal
 
 Auto reconnect after boot by ```System >> Startup >> Local Startup``` and add scripts below
 ````
