@@ -369,9 +369,17 @@ Username: admin
 Password: libernet
 ```
 
-if you get error downloading index.php everytime, then fix with this : (thanks to [vitoharhari](https://github.com/vitoharhari/xderm-mini-gui) for comparison scripts)
+if you get error downloading index.php everytime, then fix with script below
 ```sh
-wget -O /bin/fixphp "https://raw.githubusercontent.com/helmiau/openwrt-config/main/fix-xderm-libernet-gui" && chmod +x /bin/fixphp
+if ! grep -q ".php=/usr/bin/php-cgi" /etc/config/uhttpd; then
+	uci set uhttpd.main.ubus_prefix='/ubus'
+	uci set uhttpd.main.interpreter='.php=/usr/bin/php-cgi'
+	uci set uhttpd.main.index_page='cgi-bin/luci'
+	uci add_list uhttpd.main.index_page='index.html'
+	uci add_list uhttpd.main.index_page='index.php'
+	uci commit uhttpd
+	/etc/init.d/uhttpd restart
+fi
 ```
 then run **```fixphp```** command using terminal
 
