@@ -1,3 +1,6 @@
+# DEPRECATED REPOSITORY
+Read another information at <https://helmiau.com/blog>
+
 ## My OpenWrt Settings
 Index of additional setup for OpenWRT Raspberry Pi 4 (Model B), Gl.iNet GL-AR300M Nand Ext, also for other devices too.
 
