@@ -1,0 +1,46 @@
+#!/bin/bash
+#--------------------------------------------------------
+#   Don't remove this section for credits
+#   Don't rename this file
+#--------------------------------------------------------
+#   If you use some codes frome here, please give credit to www.helmiau.com
+#--------------------------------------------------------
+#   by Helmi Amirudin a.k.a helmiau
+#   my profile page https://wwww.helmiau.com
+#--------------------------------------------------------
+# This script only work for OpenClash OpenWrt
+# Supported linux architectures:
+# amd64
+# amd64-compatible
+# arm64
+# armv5
+# armv6
+# armv7
+
+# Usage via OpenWrt terminal:
+# wget -O /root/ocmetawss this_raw_url
+# chmod +x /root/ocmetawss
+# ./root/ocmetawss arm64
+
+# Initial recognition
+COREDIR="/etc/openclash/core"
+mkdir -p $COREDIR
+
+if [[ $1 = "386" ]]; then
+	clash_meta_wss_url=$(curl -sL https://api.github.com/repos/djoeni/Clash.Meta/releases/tags/Prerelease-WSS | sed -e 's|"||g' -e 's| ||g' | grep "browser_download_url:*.*Clash.Meta-linux-amd64-compatible" | sed -e's|browser_download_url:||g' -e 's|,||g' )
+else
+	clash_meta_wss_url=$(curl -sL https://api.github.com/repos/djoeni/Clash.Meta/releases/tags/Prerelease-WSS | sed -e 's|"||g' -e 's| ||g' | grep "browser_download_url:*.*Clash.Meta-linux-$1" | sed -e's|browser_download_url:||g' -e 's|,||g' )
+fi
+echo -e "$clash_meta_wss_url"
+wget -qO- "$clash_meta_wss_url" | gunzip -c > $COREDIR/clash_meta_wss
+
+if [[ -f $COREDIR/clash_meta ]] && [[ -f $COREDIR/clash_meta_wss ]]; then
+	mv $COREDIR/clash_meta $COREDIR/clash_meta_ofc
+	mv $COREDIR/clash_meta_wss $COREDIR/clash_meta
+elif [[ ! -f $COREDIR/clash_meta ]] && [[ -f $COREDIR/clash_meta_wss ]]; then
+	mv $COREDIR/clash_meta_wss $COREDIR/clash_meta
+elif [[ -f $COREDIR/clash_meta_ofc ]] && [[ -f $COREDIR/clash_meta ]]; then
+	mv $COREDIR/clash_meta_wss $COREDIR/clash_meta
+elif [[ -f $COREDIR/clash_meta_ofc ]] && [[ -f $COREDIR/clash_meta_wss ]]; then
+	mv $COREDIR/clash_meta_wss $COREDIR/clash_meta
+fi
