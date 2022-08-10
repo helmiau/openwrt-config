@@ -17,10 +17,12 @@
 # armv6
 # armv7
 
-# Usage via OpenWrt terminal:
-# wget -O /root/ocmetawss this_raw_url
+# Example usage via OpenWrt terminal:
+# wget -O /root/ocmetawss https://raw.githubusercontent.com/helmiau/openwrt-config/main/others/ocmetawss
 # chmod +x /root/ocmetawss
 # ./root/ocmetawss arm64
+
+# Note: change "arm64" with your device architecture
 
 # Initial recognition
 COREDIR="/etc/openclash/core"
